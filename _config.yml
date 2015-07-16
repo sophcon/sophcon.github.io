@@ -1,2 +1,12 @@
 domain: sophcon.github.io
 title: Sophcon
+
+collections:
+  - services
+
+defaults:
+  - scope:
+      path: ""
+      type: services
+    values:
+      layout: services

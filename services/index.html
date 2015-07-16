@@ -1,0 +1,22 @@
+---
+title: Services
+layout: default
+---
+
+<section id="secServices" class="slice white inset-shadow-1">
+  <div class="wp-section">
+    <div class="container">
+      <div class="section-title-wr">
+        <h2 class="section-title left">
+          <span>Industry Solutions</span>
+        </h2>
+      </div>
+      <div class="row">
+        {% assign displayServices = site.services | where:"serviceType", "IndustrySolutions" %}
+        {% for service in site.services %}
+        {{ service.output }}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

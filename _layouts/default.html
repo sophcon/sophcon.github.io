@@ -1,68 +1,35 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <title>{{ site.title }} - {{ page.title }}</title>
-
-  <!-- Essential styles -->
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
-
-  <!-- Boomerang styles -->
-  <link id="wpStylesheet" type="text/css" href="css/global-style.css" rel="stylesheet" media="screen">
-
-  <!-- Favicon -->
-
-
-  <!-- Required JS -->
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-</head>
+{% include head.html %}
 
 <body>
 
   <!-- Here comes the page content -->
-  <div id="divHeaderWrapper">
-    <header class="header-standard-2">
-      {% include navigation.html %}
-    </header>
+  <div class="body-wrap" style="min-height: 643px;">
+    <div id="divHeaderWrapper">
+      <header class="header-standard-2">
+        {% include navigation.html %}
+      </header>
+    </div>
+    {{ content }}
   </div>
-  <!-- Essential JS -->
-  <script src="js/modernizr.custom.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
-  <script src="js/jquery.easing.js"></script>
-  <script src="js/jquery.metadata.js"></script>
-  <script src="js/jquery.hoverup.js"></script>
-  <script src="js/jquery.hoverdir.js"></script>
-  <script src="js/jquery.stellar.js"></script>
 
-  <!-- Forms -->
-  <script src="assets/ui-kit/js/jquery.powerful-placeholder.min.js"></script>
+  {% include footer.html %}
 
-  <!-- Assets  -->
-  <script src="assets/responsive-mobile-nav/js/jquery.dlmenu.js"></script>
-  <script src="assets/hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
-  <script src="assets/page-scroller/jquery.ui.totop.min.js"></script>
-  <script src="assets/mixitup/jquery.mixitup.js"></script>
-  <script src="assets/mixitup/jquery.mixitup.init.js"></script>
-  <script src="assets/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-  <script src="assets/bootstrap/js/tooltip.js"></script>
-  <script src="assets/bootstrap/js/popover.js"></script>
-  <script src="assets/milestone-counter/jquery.countTo.js"></script>
-  <script src="assets/waypoints/waypoints.js"></script>
-
-  <!-- Boomerang App JS -->
-  <script src="js/wp.app.js"></script>
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-<![endif]-->
-
+  {% include scripts.html %}
+  <script>
+    jQuery("#layerslider").layerSlider({
+        pauseOnHover: true,
+        autoPlayVideos: false,
+        skinsPath: '{{base}}/assets/layerslider/skins/',
+        responsive: false,
+        responsiveUnder: 1280,
+        layersContainer: 1280,
+        skin: 'borderlessdark3d',
+        hoverPrevNext: true,
+    });
+  </script>
 </body>
 
 </html>
