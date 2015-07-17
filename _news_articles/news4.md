@@ -1,7 +1,7 @@
 ---
-title: Sophcon launched
-created_date: 2014-01-07 00:00:00
-author: John Doe
+title: Host first Merced Code Camp
+created_date: 2015-08-30 00:00:00
+author: Jane Doe
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

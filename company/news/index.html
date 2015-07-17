@@ -1,6 +1,7 @@
 ---
 title: News
 layout: default
+emptyArray: []
 ---
 
 <section class="slice bg-base">
@@ -22,17 +23,41 @@ layout: default
     </div>
   </div>
 </section>
-
-{% assign groups = site.news_articles | group_by: "created_date" %}
+<!-- Create a array of distinct years sorted descending -->
+{% assign years = page.emptyArray %}
+{% assign sortedArticles = (site.news_articles | sort: "created_date" | reverse) %}
+{% for article in sortedArticles %}
+  {% capture year %}{{ article.created_date | date: "%Y" }}{% endcapture %}
+  {% if years contains year %}
+   <!-- Do Nothing -->
+  {% else %}
+    {% assign years = years | push: year %}
+  {% endif %}
+{% endfor %}
 
 <section class="slice bg-white">
   <div class="wp-section">
     <div class="container">
       <ul class="timeline">
-        {% for group in groups | sort: "name" %}
-          <li class="year">{{ group.name | date: "%Y" }}</li>
-          {% for news in group.items | sort: "created_date" %}
-            {{ news.output }}
+        <!-- Loop the years then inner loop the news articles and display those that mach the outer loop year -->
+        {% for year in years %}
+        <li class="clearfix"></li>
+        <li class="year">{{ year }}</li>
+          <!-- Need to identify the first article within a year to apply offset css class -->
+          {% assign isFirst = true %}
+          {% for article in sortedArticles %}
+            <!-- Used capture in order to be able to apply date format to get just the year from the date. -->
+            {% capture articleYear %}{{ article.created_date | date: "%Y" }}{% endcapture %}
+            {% if articleYear == year %}
+              {% if isFirst == true %}
+                <li class="event offset-first">
+                {% assign isFirst = false %}
+              {% else %}
+                <li class="event">
+              {% endif %}
+              {{ article.output }}
+              </li>
+            {% endif %}
           {% endfor %}
         {% endfor %}
       </ul>
