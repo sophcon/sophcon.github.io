@@ -1,6 +1,9 @@
 - title: "Home"
   url: "/"
 
+- title: "Approach"
+  url: "/approach/"
+
 - title: "Services"
   url: "/services/"
 
@@ -14,6 +17,7 @@
   url: "/community/"
 
 - title: "Company"
+  url: "/company/about/"
   subNav:
     - subTitle: "About Us"
       subUrl: "/company/about/"

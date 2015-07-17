@@ -3,7 +3,7 @@ title: Sophcon
 
 collections:
   - services
-  - news
+  - news_articles
 
 defaults:
   - scope:
@@ -13,6 +13,6 @@ defaults:
       layout: services
   - scope:
       path: ""
-      type: news
+      type: news_articles
     values:
-      layout: news
+      layout: timeline_item

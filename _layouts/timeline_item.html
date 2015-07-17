@@ -5,16 +5,15 @@
   <div class="event-body">
     <div class="row">
       <div class="col-md-12">
-        {{ page.context }}
+        {{ content }}
         <span class="clearfix"></span>
       </div>
     </div>
   </div>
   <div class="event-footer">
     <ul class="aux-info-cells">
-      <li><i class="fa fa-calendar"></i> {{ page.date | date: '%B %d' }} August 23</li>
+      <li><i class="fa fa-calendar"></i> {{ page.created_date | date: '%B %d, %Y' }}</li>
       <li><i class="fa fa-user"></i> <a href="#">{{ page.author }}</a></li>
-      <li class="text-right"><a href="#"><i class="fa fa-heart"></i></a></li>
     </ul>
   </div>
 </li>

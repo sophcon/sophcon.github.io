@@ -1,7 +1,7 @@
 ---
-title: Sophcon launched
-date: 7/1/2015
-author: John Doe
+title: Held first Meetup event
+created_date: 2014-08-15 00:00:00
+author: Jane Doe
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
