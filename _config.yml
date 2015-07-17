@@ -3,6 +3,7 @@ title: Sophcon
 
 collections:
   - services
+  - news
 
 defaults:
   - scope:
@@ -10,14 +11,8 @@ defaults:
       type: services
     values:
       layout: services
-
-navs:
-  home:
-    title: Home
-    url: /
-  services:
-    title: Services
-    url: /services/
-  clients:
-    title: clients
-    url: /clients/
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news

@@ -1,0 +1,25 @@
+- title: "Home"
+  url: "/"
+
+- title: "Services"
+  url: "/services/"
+
+- title: "Clients"
+  url: "/clients/"
+
+- title: "Resources"
+  url: "/resources/"
+
+- title: "Community"
+  url: "/community/"
+
+- title: "Company"
+  subNav:
+    - subTitle: "About Us"
+      subUrl: "/company/about/"
+    - subTitle: "Blogs"
+      subUrl: "/company/blogs/"
+    - subTitle: "News"
+      subUrl: "/company/news/"
+    - subTitle: "Contact Us"
+      subUrl: "/company/contact/"

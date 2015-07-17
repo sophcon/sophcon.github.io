@@ -11,25 +11,20 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="cNavbarElement"><a href="/">Home</a></li>
-        <li class="cNavbarElement"><a href="/services/">Services</a></li>
-        <li class="cNavbarElement"><a href="/clients/">Clients</a></li>
-        <li class="cNavbarElement"><a href="/resources/">Resources</a></li>
-        <li class="cNavbarElement"><a href="/community/">Community</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Company</a>
-          <ul class="dropdown-menu">
-            <li class="cNavbarElement"><a href="/company/about/">About Us</a></li>
-            <li class="cNavbarElement"><a href="/company/blogs/">Blogs</a></li>
-            <li class="cNavbarElement"><a href="/company/news/">News</a></li>
-            <li class="cNavbarElement"><a href="/company/contact/">Contact Us</a></li>
-          </ul>
-        </li>
-        <!--
-        {% for nav in site.data.navs %}
-          <li class="cNavbarElement"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+        {% for nav in site.data.nav %}
+          {% if nav.subNav != null %}
+            <li class="dropdown">
+              <a href="{{ nav.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ nav.title }}</a>
+              <ul class="dropdown-menu">
+                {% for subnav in nav.subNav %}
+                  <li><a href="{{ subnav.subUrl }}">{{ subnav.subTitle }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="cNavbarElement"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+          {% endif %}
         {% endfor %}
-        -->
       </ul>
     </div>
   </div>

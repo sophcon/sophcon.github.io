@@ -21,6 +21,11 @@
               <li>
                 <a href="/">Home</a>
               </li>
+              {% if page.dir contains "company" %}
+              <li>
+                Company
+              </li>
+              {% endif %}
               <li class="active">
                 {{ page.title }}
               </li>
