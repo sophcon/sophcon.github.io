@@ -1,3 +1,4 @@
+{% assign contact = site.data.sophcon-info["contact"] %}
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
@@ -6,10 +7,10 @@
                 <div class="col">
                     <h4>Contact us</h4>
                     <ul>
-                        <li>Some Address, Merced - California</li>
-                        <li>Phone: +1 209 123 1234 | Fax: +10 724 1234 567 </li>
-                        <li>Email: <a href="mailto:hello@example.com" title="Email Us">hello@example.com</a></li>
-                        <li>Skype: <a href="skype:my.business?call" title="Skype us">my-business</a></li>
+                        <li>{{ contact.street_address }}, {{ contact.city }} - {{ contact.country }}</li>
+                        <li>Phone: {{ contact.phone }} | Fax: {{ contact.fax }} </li>
+                        <li>Email: <a href="mailto:{{ contact.email }}" title="Email Us">{{ contact.email }}</a></li>
+                        <li>Skype: <a href="skype:{{ contact.skype }}?call" title="Skype us">{{ contact.skype }}</a></li>
                         <li></li>
                     </ul>
                 </div>

@@ -10,3 +10,14 @@ defaults:
       type: services
     values:
       layout: services
+
+navs:
+  home:
+    title: Home
+    url: /
+  services:
+    title: Services
+    url: /services/
+  clients:
+    title: clients
+    url: /clients/

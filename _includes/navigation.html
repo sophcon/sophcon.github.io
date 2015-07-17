@@ -13,10 +13,24 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="cNavbarElement"><a href="/">Home</a></li>
         <li class="cNavbarElement"><a href="/services/">Services</a></li>
-        <li class="cNavbarElement"><a href="/projects/">Clients &amp; Projects</a></li>
-        <li class="cNavbarElement"><a href="/about/">About Us</a></li>
+        <li class="cNavbarElement"><a href="/clients/">Clients</a></li>
+        <li class="cNavbarElement"><a href="/resources/">Resources</a></li>
+        <li class="cNavbarElement"><a href="/community/">Community</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Company</a>
+          <ul class="dropdown-menu">
+            <li class="cNavbarElement"><a href="/company/about/">About Us</a></li>
+            <li class="cNavbarElement"><a href="/company/blogs/">Blogs</a></li>
+            <li class="cNavbarElement"><a href="/company/news/">News</a></li>
+            <li class="cNavbarElement"><a href="/company/contact/">Contact Us</a></li>
+          </ul>
+        </li>
+        <!--
+        {% for nav in site.data.navs %}
+          <li class="cNavbarElement"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+        {% endfor %}
+        -->
       </ul>
-
     </div>
   </div>
 </div>
