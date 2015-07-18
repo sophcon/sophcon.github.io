@@ -1,8 +1,8 @@
 ---
-title: Enterprise Solutions
+title: Web Design & Development
 service_type: ServiceOffering
-img_url: images/prv/col-draw-img-4.jpg
-icon: fa-globe
+img_url: images/prv/col-img-4.jpg
+icon: fa-cloud
 brief_description: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 ---
 

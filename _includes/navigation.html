@@ -11,20 +11,35 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        {% for nav in site.data.nav %}
-          {% if nav.subNav != null %}
-            <li class="dropdown">
-              <a href="{{ nav.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ nav.title }}</a>
-              <ul class="dropdown-menu">
-                {% for subnav in nav.subNav %}
-                  <li><a href="{{ subnav.subUrl }}">{{ subnav.subTitle }}</a></li>
-                {% endfor %}
-              </ul>
+        {% for nav in site.data.nav %} {% if nav.subNav != null %}
+        <li class="dropdown">
+          <a href="{{ nav.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ nav.title }}</a>
+          <ul class="dropdown-menu">
+            {% for subnav in nav.subNav %}
+            <li><a href="{{ subnav.subUrl }}">{{ subnav.subTitle }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% else %}
+        <li class="cNavbarElement"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+        {% endif %} {% endfor %}
+        <li class="dropdown dropdown-aux animate-click" data-animate-in="animated bounceInUp" data-animate-out="animated fadeOutDown" style="z-index:500;">
+          <a href="#" class="dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+          <ul class="dropdown-menu dropdown-menu-user animate-wr">
+            <li id="dropdownForm">
+              <div class="dropdown-form">
+                <form class="form-horizontal form-light p-15" role="form">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="I want to find ...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-base" type="button">Go</button>
+                    </span>
+                  </div>
+                </form>
+              </div>
             </li>
-          {% else %}
-            <li class="cNavbarElement"><a href="{{ nav.url }}">{{ nav.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
