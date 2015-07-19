@@ -28,7 +28,7 @@ $(document).ready(function() {
 					// Get third level items
 					if($(this).find('.mega-nav-ul').length > 0){
 						navList = navList + '<ul class="dl-submenu">';
-						
+
 						$(this).find('.mega-nav-ul > li').each(function(index){
 							linkTextLevel3 = $(this).find('a').text();
 							linkUrlLevel3 = $(this).find('a:first').attr('href');
@@ -37,7 +37,7 @@ $(document).ready(function() {
 
 						navList = navList + navListEnd;
 						navList = navList + '</li>';
-					} 
+					}
 				});
 			}
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
 					// Get third level items
 					if($(this).find('ul > li').length > 0){
 						navList = navList + '<ul class="dl-submenu">';
-						
+
 						$(this).children().children().each(function(index){
 							linkTextLevel3 = $(this).find('a').text();
 							linkUrlLevel3 = $(this).find('a:first').attr('href');
@@ -70,29 +70,29 @@ $(document).ready(function() {
 
 						navList = navList + navListEnd;
 						navList = navList + '</li>';
-					} 
+					}
 				});
-			} 		
+			}
 		}
 
 		navList = navList + navListEnd;
 		navList = navList + '</li>';
 
 		// Append and create list menu
-		$('#dl-menu > ul.dl-menu').append(navList + '</ul>');		
+		$('#dl-menu > ul.dl-menu').append(navList + '</ul>');
 	});
 	// Initializing mobile menu
 	$('#dl-menu').dlmenu({
         animationClasses:{
-        	classin: 'dl-animate-in-2', 
-        	classout: 'dl-animate-out-2' 
+        	classin: 'dl-animate-in-2',
+        	classout: 'dl-animate-out-2'
         }
     });
     // Bootstrap - Dropdown Hover
    	function allowDropdownHover() {
    		if($(window).width() > 767){
 	    	$('.dropdown-toggle').dropdownHover();
-	    }	
+	    }
     }
     allowDropdownHover();
     window.onresize = allowDropdownHover; // Call the function on resize
@@ -111,7 +111,7 @@ $(document).ready(function() {
 			autoPlay: 10000,
 			singleItem: true,
 			stopOnHover: true
-		}); 
+		});
 	}
 	if($(".owl-carousel-2").length > 0){
 		// Owl Carousel
@@ -121,7 +121,7 @@ $(document).ready(function() {
 			pagination : false,
 			autoPlay: 10000,
 			stopOnHover: true
-		}); 
+		});
 	}
 	if($(".owl-carousel-3").length > 0){
 		// Owl Carousel
@@ -131,17 +131,17 @@ $(document).ready(function() {
 			pagination : false,
 			autoPlay: 10000,
 			stopOnHover: true
-		}); 
+		});
 	}
 	if($(".owl-carousel-4").length > 0){
 		// Owl Carousel
 		$(".owl-carousel-4").owlCarousel({
 			items : 4,
 			lazyLoad : true,
-			pagination: false,			
+			pagination: false,
 			autoPlay: 10000,
 			stopOnHover: true
-		}); 
+		});
 	}
 	if($(".owl-carousel-5").length > 0){
 		// Owl Carousel
@@ -151,13 +151,13 @@ $(document).ready(function() {
 			pagination : false,
 			autoPlay: 10000,
 			stopOnHover: true
-		}); 
+		});
 	}
 	// Sortable list
 	$('#ulSorList').mixitup();
 	// Fancybox
 	$(".theater").fancybox();
-	// Fancybox	
+	// Fancybox
 	$(".ext-source").fancybox({
 		'transitionIn'		: 'none',
 		'transitionOut'		: 'none',
@@ -205,7 +205,7 @@ $(document).ready(function() {
 				);
 			}
 		});
-		
+
     	// Range slider 1 - With fixed intervals
         $(".range-slider-1").noUiSlider({
 			start: [300, 5000],
@@ -349,14 +349,21 @@ $(document).ready(function() {
 		horizontal: false,
 		offset: 300,
 		triggerOnce: false
-	}	
+	}
 	$('.animate-in-view, .pie-chart').waypoint(function(direction) {
 		// Easy Pie Chart
 		$(".pie-chart").easyPieChart({
 			size:150,
 			easing: 'easeOutBounce',
 			onStep: function(from, to, percent) {
-				$(this.el).find('.percent').text(Math.round(percent));
+        var display = 0.0;
+        if($(this.el).data('unit')) {
+          display = percent / 8.4;
+					$(this.el).find('.percent').text(Math.round(display) + 'h');
+        }
+				else {
+					$(this.el).find('.percent').text(Math.round(percent));
+				}
 			},
 			barColor: '#FFF',
 			delay: 3000,
@@ -380,7 +387,7 @@ $(document).ready(function() {
 			} else {
 				$("#divSearch").show().addClass('animated slideInDown');
 			}
-			return false;	
+			return false;
 		});
 		$("#cmdCloseSearch").click(function(){
 			if($("#divSearch").is(":visible")){
@@ -392,7 +399,7 @@ $(document).ready(function() {
 				});
 			}
 		});
-		
+
 		// Keyboard shortcuts
 		$('html').keyup(function(e){
 			if(e.keyCode == 27){
@@ -407,12 +414,12 @@ $(document).ready(function() {
 			}
 		});
 	}
-	// Hover direction animation	
-	$(".animate-hover-slide-4 .figure").each( function(){ 
+	// Hover direction animation
+	$(".animate-hover-slide-4 .figure").each( function(){
 		$(this).hoverdir({
 			hoverDelay: 50,
 			inverse: 	false
-		}); 
+		});
 	});
 	// Custom animations
 	$(".animate-click").click(function(){
@@ -433,7 +440,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-	
+
 	$(".animate-hover").hover(function(){
 		var animation = $(this).data("animate-in");
 		if(animation != undefined || animation != ""){
@@ -463,9 +470,9 @@ $(document).ready(function() {
 			$("#navMobile").show().addClass('animated bounceInLeft');
 			$("body").addClass("nav-menu-in");
 		}
-		return false;	
-	});	
- 
+		return false;
+	});
+
 	// Slide bar - right
 	$("#cmdAsideMenu, #btnHideAsideMenu, .navbar-toggle-aside-menu").click(function(){
 		if($("#asideMenu").is(":visible")){
@@ -473,14 +480,14 @@ $(document).ready(function() {
 			$("#asideMenu").addClass('animated bounceOutRight');
 			$('#asideMenu').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 				$(this).hide();
-				$("#asideMenu").removeClass('animated bounceOutRight');			
+				$("#asideMenu").removeClass('animated bounceOutRight');
 			});
 		}
 		else{
 			$("#asideMenu").show().addClass('animated bounceInRight');
 		}
-		return false;	
-	});	
+		return false;
+	});
 
 	// Close opened element when body is clicked
 	// $(document).mouseup(function(e){
@@ -540,7 +547,7 @@ $(document).ready(function() {
 	    	layerSliderFullsize();
 	    }
 	});
-    
+
     // Functions
     function layerSliderDynamic(){
     	var windowHeight = $(window).height();

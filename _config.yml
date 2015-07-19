@@ -4,6 +4,7 @@ title: Sophcon
 collections:
   - services
   - news_articles
+  - mission_statements
 
 defaults:
   - scope:
