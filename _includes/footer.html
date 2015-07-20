@@ -1,4 +1,5 @@
 {% assign contact = site.data.sophcon-info["contact"] %}
+{% assign socials = site.data.sophcon-info["socials"] %}
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
@@ -34,14 +35,9 @@
             <div class="col-md-3">
                 <div class="col col-social-icons">
                     <h4>Follow us</h4>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-skype"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-youtube-play"></i></a>
-                    <a href="#"><i class="fa fa-flickr"></i></a>
+                    {% for social in socials %}
+                    <a href="{{ social.url }}"><i class="fa {{ social.icon }}"></i></a>
+                    {% endfor %}
                 </div>
             </div>
 

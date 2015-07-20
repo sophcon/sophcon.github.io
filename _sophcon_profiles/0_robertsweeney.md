@@ -1,7 +1,38 @@
 ---
-title: Do amazing things every day
-icon: fa-rocket
-brief_description: Lorem ipsum dolor sit amet, 
+title: robertsweeney
+name: Robert Sweeney
+job_title: CEO/Founder
+avatar: null
+avatar_url: https://avatars0.githubusercontent.com/u/301574?v=3&s=400
+socials:
+  - name: "Facebook"
+    url: www.facebook.com
+    icon: fa-facebook
+    icon_bg: facebook
+    can_contact: true
+  - name: "Google+"
+    url: www.googleplus.com
+    icon: fa-google-plus
+    icon_bg: google
+    can_contact: true
+  - name: "LinkedIn"
+    url: www.linkedin.com
+    icon: fa-linkedin
+    icon_bg: linkedin
+    can_contact: true
+  - name: "Twitter"
+    url: www.twitter.com
+    icon: fa-twitter
+    icon_bg: twitter
+    can_contact: true
+  - name: "Github"
+    url: www.github.com
+    icon: fa-github
+    icon_bg: github
+    can_contact: false
+about_me_short: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+goals: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.

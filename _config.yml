@@ -2,9 +2,15 @@ domain: sophcon.github.io
 title: Sophcon
 
 collections:
-  - services
-  - news_articles
-  - mission_statements
+  services:
+    output: false
+  news_articles:
+    output: false
+  mission_statements:
+    output: false
+  sophcon_profiles:
+    output: true
+    permalink: "/company/about/:title/index.html"
 
 defaults:
   - scope:
@@ -17,3 +23,8 @@ defaults:
       type: news_articles
     values:
       layout: timeline_item
+  - scope:
+      path: ""
+      type: sophcon_profiles
+    values:
+      layout: profile

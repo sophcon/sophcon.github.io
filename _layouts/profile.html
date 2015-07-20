@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  {% include base.html %}
+  <!-- Here comes the page content -->
+  <div class="body-wrap" style="min-height: 643px;">
+    <div id="divHeaderWrapper">
+      <header class="header-standard-2">
+        {% include navigation.html %}
+      </header>
+    </div>
+    {% if page.title != "Home" %}
+    <div class="pg-opt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Team Member</h2>
+          </div>
+          <div class="col-md-6">
+            <ol class="breadcrumb">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/company/about/">Company</a>
+              </li>
+              <li>
+                <a href="/company/about/">About</a>
+              </li>
+              <li class="active">
+                {{ page.title }}
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    <div class="container">
+      <section class="slice bg-white">
+        <div class="wp-section">
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-6">
+                {% if page.avatar != null %}
+                <img src="{{ base }}/{{ page.avatar }}" class="img-responsive" alt="">
+                {% else %}
+                <img src="{{ page.avatar_url }}" class="img-responsive" alt="">
+                {% endif %}
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h4 class="title">{{ page.job_title }}</h4>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="social-media social-media-sm text-right">
+                      {% for social in page.socials %}
+                      <a href="#" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+                <h3 class="title-lg">{{ page.name }}</h3>
+                <p>
+                  {{ content }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="delimiter no-margin">
+      <section class="slice light-gray">
+        <div class="wp-section ">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="section-title-wr">
+                  <h3 class="section-title left"><span>About me</span></h3>
+                </div>
+                <p>
+                  {{ page.about_me_short }}
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="section-title-wr">
+                  <h3 class="section-title left"><span>My goals</span></h3>
+                </div>
+                <p>
+                  {{ page.goals }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {% include footer.html %} {% include scripts.html %}
+  <script>
+    jQuery("#layerslider").layerSlider({
+      pauseOnHover: true,
+      autoPlayVideos: false,
+      skinsPath: '{{base}}/assets/layerslider/skins/',
+      responsive: false,
+      responsiveUnder: 1280,
+      layersContainer: 1280,
+      skin: 'borderlessdark3d',
+      hoverPrevNext: true,
+    });
+  </script>
+</body>
+
+</html>

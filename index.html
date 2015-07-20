@@ -56,7 +56,8 @@ layout: default
   <div class="wp-section">
     <div class="container">
       <div class="row">
-        {% assign displayServices = site.services | where:"service_type", "ServiceOffering" %} {% for service in site.services %}
+        {% assign displayServices = site.services | where:"service_type", "ServiceOffering" %}
+        {% for service in site.services %}
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="icon-block icon-block-1">
             <div class="icon-block-item">
@@ -82,8 +83,8 @@ layout: default
           <div class="section-title-wr">
               <h3 class="section-title left"><span>Our Mission</span></h3>
           </div>
-          <div class="row">
           {% for missionStatement in site.mission_statements %}
+          {% cycle 'add rows': '<div class="row">', nil %}
             <div class="col-md-6">
               <div class="short-feature">
                 <div class="feature-icon">
@@ -95,8 +96,8 @@ layout: default
                 </div>
               </div>
             </div>
+          {% cycle 'close rows': nil, '</div>' %}
           {% endfor %}
-          </div>
         </div>
       </div>
     </div>

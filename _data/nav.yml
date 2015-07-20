@@ -21,6 +21,11 @@
   subNav:
     - subTitle: "About Us"
       subUrl: "/company/about/"
+      sub2Nav:
+        - sub2Title: "Robert Sweeney"
+          sub2Url: "/company/about/robertsweeney/"
+        - sub2Title: "Jane Doe"
+          sub2Url: "/company/about/janedoe/"  
     - subTitle: "Blogs"
       subUrl: "/company/blogs/"
     - subTitle: "News"

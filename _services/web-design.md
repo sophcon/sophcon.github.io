@@ -1,5 +1,5 @@
 ---
-title: Web Design & Development
+title: Web Design &amp; Development
 service_type: ServiceOffering
 img_url: images/prv/col-img-4.jpg
 icon: fa-cloud

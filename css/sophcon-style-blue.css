@@ -3,3 +3,28 @@
     background: url(../images/prv/banner-img-4.jpg) fixed no-repeat !important;
     color: #fff;
 }
+
+.navbar .social-item .linkedin{
+	background:#43609c;
+	color:#fff !important
+}
+
+.navbar-wp .navbar-right .social-link.linkedin:hover{
+	background:#43609c;
+	color:#fff
+}
+
+ul.social-icons li.linkedin:hover{
+	background:#43609c;
+	color:#fff !important
+}
+
+.social-media .linkedin{
+	background:#43609c;
+	color:#fff
+}
+
+.navbar-wp .navbar-right .social-link.linkedin:hover{
+	background:#43609c;
+	color:#fff
+}

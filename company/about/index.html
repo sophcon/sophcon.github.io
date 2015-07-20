@@ -101,3 +101,74 @@ layout: default
     </div>
   </div>
 </section>
+<section class="slice white bb">
+  <div class="wp-section">
+    <div class="container">
+      {% for profile in site.sophcon_profiles %}
+      {% capture theCycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if theCycle == 'odd' %}
+      <div class="row ">
+        <div class="col-md-6">
+          {% if profile.avatar != null %}
+          <img src="{{ base }}/{{ profile.avatar }}" class="img-responsive" alt="" style="max-height:309px">
+          {% else %}
+          <img src="{{ profile.avatar_url }}" class="img-responsive" alt="" style="max-height:309px">
+          {% endif %}
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-7">
+              <h4 class="title">{{ profile.job_title }}</h4>
+            </div>
+            <div class="col-md-5">
+              <div class="social-media social-media-sm text-right">
+                {% for social in profile.socials %}
+                <a href="#" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <h5 class="title title-md c-light-gray">
+            <a href="{{ base }}/company/about/{{ profile.title }}/">{{ profile.name }}</a>
+          </h5>
+          <p>
+            {{ profile.about_me_short }}
+          </p>
+        </div>
+      </div>
+      {% else %}
+      <div class="row ">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-7">
+              <h4 class="title">{{ profile.job_title }}</h4>
+            </div>
+            <div class="col-md-5">
+              <div class="social-media social-media-sm text-right">
+                {% for social in profile.socials %}
+                <a href="#" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <h5 class="title title-md c-light-gray">
+            <a href="{{ base }}/company/about/{{ profile.title }}/">{{ profile.name }}</a>
+          </h5>
+          <p>
+            {{ profile.about_me_short }}
+          </p>
+        </div>
+        <div class="col-md-6">
+          {% if profile.avatar != null %}
+          <img src="{{ base }}/{{ profile.avatar }}" class="img-responsive" alt="" style="max-height:309px">
+          {% else %}
+          <img src="{{ profile.avatar_url }}" class="img-responsive" alt="" style="max-height:309px">
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+      <hr />
+      {% endfor %}
+    </div>
+  </div>
+</section>

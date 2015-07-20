@@ -1,7 +1,23 @@
 ---
-title: Do amazing things every day
-icon: fa-rocket
-brief_description: Lorem ipsum dolor sit amet, 
+title: janedoe
+name: Jane Doe
+job_title: Web Developer
+avatar: images/prv/team/team-agency-wide-1.jpg
+avatar_url: null
+socials:
+  - name: "Facebook"
+    url: www.facebook.com
+    icon: fa-facebook
+    icon_bg: facebook
+    can_contact: true
+  - name: "Google+"
+    url: www.googleplus.com
+    icon: fa-google-plus
+    icon_bg: google
+    can_contact: true
+about_me_short: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+goals: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.

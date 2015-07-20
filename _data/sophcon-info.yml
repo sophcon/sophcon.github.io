@@ -7,3 +7,30 @@ contact:
   phone: (209) 357-1234
   fax: (209) 123-1234
   skype: (209) 228-3333
+
+socials:
+  - facebook:
+    url: www.facebook.com
+    icon: fa-facebook
+    icon_bg: facebook
+    can_contact: true
+  - googleplus:
+    url: www.googleplus.com
+    icon: fa-google-plus
+    icon_bg: google
+    can_contact: true
+  - linkedin:
+    url: www.linkedin.com
+    icon: fa-linkedin
+    icon_bg: linkedin
+    can_contact: true
+  - twitter:
+    url: www.twitter.com
+    icon: fa-twitter
+    icon_bg: twitter
+    can_contact: true
+  - github:
+    url: www.github.com
+    icon: fa-github
+    icon_bg: github
+    can_contact: false

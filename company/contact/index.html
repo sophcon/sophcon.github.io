@@ -4,23 +4,21 @@ layout: default
 ---
 {% include base.html %}
 {% assign contact = site.data.sophcon-info["contact"] %}
-<section class="slice no-padding">
-  <div id="mapCanvas" class="map-canvas no-margin"></div>
-</section>
+{% assign socials = site.data.sophcon-info["socials"] %}
 
 <section class="slice bg-white">
-  <div class="w-section inverse">
+  <div class="wp-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
           <div class="section-title-wr">
-            <h3 class="section-title left"><span>Contact us</span></h3>
+            <h3 class="section-title left"><span>Send us a message</span></h3>
           </div>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
 
-          <form class="form-light mt-20" role="form" id="send-message">
+          <form class="form-light mt-20" role="form">
             <div class="form-group">
               <label>Name</label>
               <input type="text" class="form-control" placeholder="Your name">
@@ -41,39 +39,52 @@ layout: default
             </div>
             <div class="form-group">
               <label>Subject</label>
-              <input type="text" class="form-control" placeholder="Subject">
+              <input type="text" class="form-control" id="subject" placeholder="Subject">
             </div>
             <div class="form-group">
               <label>Message</label>
-              <textarea class="form-control" id="message" placeholder="Write you message here..." style="height:100px;"></textarea>
+              <textarea class="form-control" placeholder="Write you message here..." style="height:100px;"></textarea>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <button type="reset" class="btn btn-light">Reset</button>
-              </div>
-              <div class="col-md-6">
-                <button type="submit" class="btn btn-base btn-icon btn-icon-right btn-fly pull-right">
-                  <span>Send message</span>
-                </button>
-              </div>
-            </div>
+            <button type="submit" class="btn btn-base">Send message</button>
           </form>
         </div>
-        <div class="col-md-6">
+
+        <div class="col-md-5">
+          <div id="mapCanvas" class="map-canvas no-margin"></div>
+
           <div class="row">
-            <div class="col-md-12">
-              <div class="section-title-wr">
-                <h3 class="section-title left"><span>Business info</span></h3>
+            <div class="col-sm-6">
+              <div class="subsection">
+                <div class="section-title-wr">
+                  <h3 class="section-title left"><span>Business info</span></h3>
+                </div>
+                <div class="contact-info">
+                  <h5><i class="fa fa-map-marker"></i> Address</h5>
+                  <p>{{ contact.street_address }}, {{ contact.state }} - {{ contact.country }}</p>
+
+                  <h5><i class="fa fa-envelope"></i> Email</h5>
+                  <p><a href="mailto://{{ contact.email }}">{{ contact.email }}</a></p>
+
+                  <h5><i class="fa fa-phone"></i> Phone</h5>
+                  <p>{{ contact.phone }}</p>
+                </div>
               </div>
-              <div class="contact-info">
-                <h5><i class="fa fa-map-marker"></i> Address</h5>
-                <p>{{ contact.street_address }}, {{ contact.state }} - {{ contact.country }}</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="subsection">
+                <div class="section-title-wr">
+                  <h3 class="section-title left"><span>Program</span></h3>
+                </div>
+                <div class="contact-info">
+                  <h5><i class="fa fa-check"></i>  Monday - Friday</h5>
+                  <p>10:00 AM - 6:00 PM</p>
 
-                <h5><i class="fa fa-envelope"></i> Email</h5>
-                <p><a href="mailto://{{ contact.email }}">{{ contact.email }}</a></p>
+                  <h5><i class="fa fa-times"></i> Saturday</h5>
+                  <p>Closed</p>
 
-                <h5><i class="fa fa-phone"></i> Phone</h5>
-                <p>{{ contact.phone }}</p>
+                  <h5><i class="fa fa-times"></i> Sunday</h5>
+                  <p>Closed</p>
+                </div>
               </div>
             </div>
           </div>
@@ -85,9 +96,10 @@ layout: default
             Lorem ipsum dolor sit amet, consectetur acing elit. Aenean esrsel piesn qersl ioinm sersoe non urna dolor aecena.
           </p>
           <div class="social-media">
-            <a href="#"><i class="fa fa-facebook facebook"></i></a>
-            <a href="#"><i class="fa fa-google-plus google"></i></a>
-            <a href="#"><i class="fa fa-twitter twitter"></i></a>
+            {% assign contact_social = socials | where:"can_contact", true %}
+            {% for social in contact_social %}
+            <a href="{{ social.url }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
+            {% endfor %}
           </div>
         </div>
       </div>
