@@ -25,9 +25,23 @@
                 <a href="/">Home</a>
               </li>
               {% if page.dir contains "company" %}
-              <li>
-                <a href="/company/about/">Company</a>
-              </li>
+                <li>
+                  <a href="/company/about/">Company</a>
+                </li>
+              {% else %}
+                {% if page.dir contains "clients" %}
+                <li>
+                  <a href="/company/about/">Clients</a>
+                </li>
+                {% endif %}
+              {% endif %}
+              {% if page.job_title != null %}
+                <li>
+                  <a href="/company/about/">Company</a>
+                </li>
+                <li>
+                  <a href="/company/about/">About</a>
+                </li>
               {% endif %}
               <li class="active">
                 {{ page.title }}

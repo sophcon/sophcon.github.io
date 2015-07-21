@@ -1,4 +1,68 @@
 ---
-title: Clients and Projects
+title: Clients
 layout: default
+emptyArray: []
 ---
+{% include base.html %}
+{% assign industries = page.emptyArray %}
+{% for client in (site.clients | group_by: "industry") %}
+  {% if industries contains client.industry %}
+  {% else %}
+    {% assign industries = industries | push: client.industry %}
+  {% endif %}
+{% endfor %}
+
+<section class="slice bg-white animate-hover-slide">
+  <div class="wp-section work">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="sort-list-btn hidden-xs">
+            <button type="button" class="btn btn-base filter active" data-filter="all"><i class="fa fa-th-large"></i> Show all</button>
+            {% for industry in industries %}
+            <button type="button" class="btn btn-white filter" data-filter="{{ industry }}">{{ industry }}</button>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="btn-group pull-right hidden-md hidden-lg">
+            <button type="button" class="btn btn-three">Filter projects</button>
+            <button type="button" class="btn btn-three dropdown-toggle" data-toggle="dropdown">
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu pull-right" role="menu" id="ulFilterMenu">
+              <li class="filter active" data-filter="all"><a>Show All</a></li>
+              {% for industry in industries %}
+              <li class="filter" data-filter="{{ industry }}"><a>{{ industry }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="ulSorList" style="margin:15px 15px;">
+          {% for client in site.clients %}
+          <div class="mix {{ client.industry }} col-lg-6 col-md-6 col-sm-6 mix_all" data-cat="{{ forloop.index }}">
+            <div class="wp-block inverse">
+              <a class="hov {shiftContent:30}" href="#">
+                <img src="{{base}}/{{client.client_img}}" alt="" class="img-responsive">
+                <div class="caption base">
+                  <p>
+                    {{ client.brief_description }}
+                  </p>
+                  <button href="{{base}}/clients/{{ client.title | replace: " ", "-" | downcase }}/" class="navigate-on-click btn btn-sm btn-white btn-icon fa-link mt-10"><span>Read more</span></button>
+                  <button href="{{client.site_url}}" class="navigate-on-click btn btn-sm btn-white btn-icon fa-external-link mt-10"><span>Go to site</span></button>
+                </div>
+              </a>
+              <h2 class="title">{{ client.title }}</h2>
+              <small>{{ client.industry }}</small>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

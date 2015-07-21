@@ -1,5 +1,5 @@
 ---
-title: Exciting and fun working environment
+title: Have fun, be casual
 icon: fa-smile-o
 brief_description: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
 ---

@@ -1,6 +1,18 @@
 ---
-title: Accelerate their growth
-icon: fa-trophy
+title: Realtor 2
+layout: client
+client_img: images/clients/realtor_executive/realtor_executives.png
+site_url: http://realtyexecutivesmerced.com/
+industry: Real Estate
+released_date: 2017-01-08 00:00:00
+tech_used:
+  - tech:
+    name: ASP.Net
+    url: http://www.asp.net/
+  - tech:
+    name: Xamarin
+    url: http://xamarin.com
+carousel_imgs: null
 brief_description: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
 ---
 

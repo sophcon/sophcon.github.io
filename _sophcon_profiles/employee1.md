@@ -1,6 +1,5 @@
 ---
-title: janedoe
-name: Jane Doe
+title: Jane Doe
 job_title: Web Developer
 avatar: images/prv/team/team-agency-wide-1.jpg
 avatar_url: null

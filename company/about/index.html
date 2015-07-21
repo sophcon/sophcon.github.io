@@ -129,7 +129,7 @@ layout: default
             </div>
           </div>
           <h5 class="title title-md c-light-gray">
-            <a href="{{ base }}/company/about/{{ profile.title }}/">{{ profile.name }}</a>
+            <a href="{{ base }}/company/about/{{ profile.title | replace: " ", "-" | downcase }}/">{{ profile.title }}</a>
           </h5>
           <p>
             {{ profile.about_me_short }}
@@ -152,7 +152,7 @@ layout: default
             </div>
           </div>
           <h5 class="title title-md c-light-gray">
-            <a href="{{ base }}/company/about/{{ profile.title }}/">{{ profile.name }}</a>
+            <a href="{{ base }}/company/about/{{ profile.title | replace: " ", "-" | downcase }}/">{{ profile.title }}</a>
           </h5>
           <p>
             {{ profile.about_me_short }}

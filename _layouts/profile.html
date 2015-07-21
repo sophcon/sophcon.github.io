@@ -1,44 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-{% include head.html %}
-
-<body>
-  {% include base.html %}
-  <!-- Here comes the page content -->
-  <div class="body-wrap" style="min-height: 643px;">
-    <div id="divHeaderWrapper">
-      <header class="header-standard-2">
-        {% include navigation.html %}
-      </header>
-    </div>
-    {% if page.title != "Home" %}
-    <div class="pg-opt">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>Team Member</h2>
-          </div>
-          <div class="col-md-6">
-            <ol class="breadcrumb">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/company/about/">Company</a>
-              </li>
-              <li>
-                <a href="/company/about/">About</a>
-              </li>
-              <li class="active">
-                {{ page.title }}
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endif %}
+---
+layout: default
+---
     <div class="container">
       <section class="slice bg-white">
         <div class="wp-section">
@@ -64,7 +26,7 @@
                     </div>
                   </div>
                 </div>
-                <h3 class="title-lg">{{ page.name }}</h3>
+                <h3 class="title-lg">{{ page.title }}</h3>
                 <p>
                   {{ content }}
                 </p>
@@ -100,20 +62,3 @@
       </section>
     </div>
   </div>
-
-  {% include footer.html %} {% include scripts.html %}
-  <script>
-    jQuery("#layerslider").layerSlider({
-      pauseOnHover: true,
-      autoPlayVideos: false,
-      skinsPath: '{{base}}/assets/layerslider/skins/',
-      responsive: false,
-      responsiveUnder: 1280,
-      layersContainer: 1280,
-      skin: 'borderlessdark3d',
-      hoverPrevNext: true,
-    });
-  </script>
-</body>
-
-</html>

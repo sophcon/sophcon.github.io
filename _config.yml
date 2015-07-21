@@ -11,6 +11,9 @@ collections:
   sophcon_profiles:
     output: true
     permalink: "/company/about/:title/index.html"
+  clients:
+    output: true
+    permalink: "/clients/:title/index.html"
 
 defaults:
   - scope:

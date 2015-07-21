@@ -9,6 +9,13 @@
 
 - title: "Clients"
   url: "/clients/"
+  subNav:
+    - subTitle: "MB Sports"
+      subUrl: "/clients/mb-sports/"
+    - subTitle: "Realtor Executive"
+      subUrl: "/clients/realtor-executive/"
+    - subTitle: "Realtor 2"
+      subUrl: "/clients/realtor-2/"
 
 - title: "Resources"
   url: "/resources/"
@@ -23,9 +30,9 @@
       subUrl: "/company/about/"
       sub2Nav:
         - sub2Title: "Robert Sweeney"
-          sub2Url: "/company/about/robertsweeney/"
+          sub2Url: "/company/about/robert-sweeney/"
         - sub2Title: "Jane Doe"
-          sub2Url: "/company/about/janedoe/"  
+          sub2Url: "/company/about/jane-doe/"
     - subTitle: "Blogs"
       subUrl: "/company/blogs/"
     - subTitle: "News"

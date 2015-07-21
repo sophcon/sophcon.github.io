@@ -1,6 +1,21 @@
 ---
-title: Accelerate their growth
-icon: fa-trophy
+title: MB Sports
+layout: client
+client_img: images/clients/mbsports/mb-sports.png
+site_url: http://www.mbsports.net
+industry: Manufacture
+released_date: 2015-01-08 00:00:00
+tech_used:
+  - tech:
+    name: Jekyll
+    url: http://jekyllrb.com/
+  - tech:
+    name: MarkDown
+    url: http://daringfireball.net/projects/markdown/
+carousel_imgs:
+  - url: images/clients/mbsports/mb-sports.png
+  - url: images/clients/mbsports/mb-sports2.png
+  - url: images/clients/mbsports/mb-sports3.png
 brief_description: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
 ---
 

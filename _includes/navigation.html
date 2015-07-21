@@ -15,7 +15,7 @@
         {% for nav in navitems %}
         {% if nav.subNav != null %}
         <li class="dropdown">
-          <a href="{{ nav.url }}" id="nav{{ nav.title }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ nav.title }}</a>
+          <a href="{{ nav.url }}" class="navigate-on-click dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ nav.title }}</a>
           <ul class="dropdown-menu">
             {% for subnav in nav.subNav %}
               {% if subnav.sub2Nav != null %}

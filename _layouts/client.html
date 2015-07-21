@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<section class="slice bg-white bb">
+  <div class="wp-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          {% if page.carousel_imgs != null %}
+          <div id="workCarousel" class="carousel carousel-4 slide color-two-l" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators hide">
+              <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              {% for c_img in page.carousel_imgs %}
+              {% if forloop.first == true %}
+              <div class="item item-dark active">
+              {% else %}
+              <div class="item item-dark">
+              {% endif %}
+                <img src="{{base}}/{{ c_img.url }}" class="img-responsive" />
+              </div>
+              {% endfor %}
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#workCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="right carousel-control" href="#workCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+
+          </div>
+          {% else %}
+            <img src="{{base}}/images/prv/col-img-4.jpg" class="img-responsive" />
+          {% endif %}
+        </div>
+
+        <div class="col-md-6">
+          <div class="vertical-info">
+            <h4>Category</h4>
+            <p class="delimiter">
+              {{ page.industry }}
+            </p>
+
+            <h4>Client</h4>
+            <p class="delimiter">
+              {{ page.title }}
+            </p>
+
+            <h4>Technoligies used</h4>
+            <p class="delimiter">
+              {% for tech in page.tech_used %}
+              <a href="{{tech.url}}">{{ tech.name }}</a>
+              {% if forloop.last != true %}
+              ,
+              {% endif %}
+              {% endfor %}
+            </p>
+
+            <h4>Date released</h4>
+            <p class="delimiter">
+              {{ page.released_date | date: '%B %d, %Y' }}
+            </p>
+          </div>
+
+          <div class="section-title-wr mt-40">
+            <h3 class="section-title left">
+              <span>Project description</span>
+            </h3>
+          </div>
+          <p class="">
+            {{ content }}
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

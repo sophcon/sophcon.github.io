@@ -1,6 +1,5 @@
 ---
-title: robertsweeney
-name: Robert Sweeney
+title: Robert Sweeney
 job_title: CEO/Founder
 avatar: null
 avatar_url: https://avatars0.githubusercontent.com/u/301574?v=3&s=400

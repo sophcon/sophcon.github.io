@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#navCompany').click(function() {
-    window.location.href = "/company/about/";
+  $('.navigate-on-click').click(function() {
+    window.location.href = $(this).attr('href');
   });
 });
