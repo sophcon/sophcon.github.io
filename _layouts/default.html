@@ -29,10 +29,14 @@
                   <a href="/company/about/">Company</a>
                 </li>
               {% else %}
-                {% if page.client_img != null %}
-                <li>
-                  <a href="/clients/">Clients</a>
-                </li>
+                {% if page.dir contains "clients" %}
+                  
+                {% else %}
+                  {% if page.client_img != null %}
+                  <li>
+                    <a href="/clients/">Clients</a>
+                  </li>
+                  {% endif %}
                 {% endif %}
               {% endif %}
               {% if page.job_title != null %}
