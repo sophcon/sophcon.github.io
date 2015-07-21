@@ -29,9 +29,9 @@
                   <a href="/company/about/">Company</a>
                 </li>
               {% else %}
-                {% if page.dir contains "clients" %}
+                {% if page.client_img != null %}
                 <li>
-                  <a href="/company/about/">Clients</a>
+                  <a href="/clients/">Clients</a>
                 </li>
                 {% endif %}
               {% endif %}
