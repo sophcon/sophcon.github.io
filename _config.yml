@@ -1,6 +1,12 @@
 domain: sophcon.github.io
 title: Sophcon
 
+paginate: 10 # pagination based on number of posts
+paginate_path: "/blog/page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: true
+markdown: kramdown
+
 collections:
   services:
     output: false
