@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: default
+hide-breadcrumb: true
 ---
 {% include base.html %}
 
@@ -58,6 +59,11 @@ layout: default
       <div class="row">
         {% assign displayServices = site.services | where:"service_type", "ServiceOffering" %}
         {% for service in site.services %}
+        {% capture theCycle %}{% cycle '1', '2', '3', '4' %}{% endcapture %}
+        {% if theCycle == '4' %}
+      </div>
+      <div class="row">
+        {% endif %}
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="icon-block icon-block-1">
             <div class="icon-block-item">
@@ -91,7 +97,7 @@ layout: default
                   <i class="fa {{ missionStatement.icon }}"></i>
                 </div>
                 <div class="feature-txt">
-                  <h3>{{ missionStatement.title }}</h3>
+                  <h3 style="text-transform: none;">{{ missionStatement.title }}</h3>
                   <p>{{ missionStatement.brief_description }} {{ mssionStatement.icon }}</p>
                 </div>
               </div>
@@ -104,7 +110,7 @@ layout: default
   </div>
 </section>
 
-<section class="slice bg-banner-1 animate-in-view">
+<section class="slice bg-banner-1 animate-in-view hidden">
   <div class="wp-section">
     <div class="container">
       <div class="row">

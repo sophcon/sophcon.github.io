@@ -5,41 +5,77 @@ layout: default
 {% include base.html %}
 
 <div class="container">
-  {% for post in site.posts %}
 
-  <article class="home">
-
-    <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-    </span>
-
-    <h2>
-    <a href="{{ base }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
-
-    <div>
-      {% if post.fullview %}
-        {{ post.content }}
-      {% else %}
-        {% if post.shortinfo %}
-          {{ post.shortinfo }}
-        {% elsif post.description %}
-          {{ post.description }}
-        {% else %}
-          {{ post.excerpt }}
-        {% endif %}
-      {% endif %}
+  <section class="slice bg-white">
+    <div class="wp-section">
+      <div class="container">
+        <div class="row">
+          {% for post in paginator.posts %}
+          <div class="col-md-12">
+            <div class="post-item style2">
+              <div class="post-meta hidden-xs">
+                <div class="date">
+                  <span class="icon"><i class="fa fa-calendar"></i></span>
+                  <span class="month">{{ post.date | date: '%b' }}</span>
+                  <span class="day">{{ post.date | date: "%d" | plus:'0' }}</span>
+                </div>
+              </div>
+              <div class="post-content-wr">
+                <div class="post-meta-top">
+                  <h2 class="post-title">
+                  	<a href="{{ base }}{{ post.url }}">{{ post.title }}</a>
+                  </h2>
+                </div>
+                <div class="post-content clearfix">
+                  <div class="post-tags">Tags [{{ post.tags | join: ', ' }}]</div>
+                  <div class="post-desc">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                </div>
+                <div class="post-meta-bot clearfix">
+                  <span class="post-author">WRITTEN BY <a href="#">{{ post.author }}</a></span>
+                  <a href="{{ base }}{{ post.url }}" class="btn btn-sm btn-base">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
+  </section>
 
-  </article>
-  {% endfor %}
+  <hr/>
 
+  <ul class="pager">
+
+    {% if paginator.previous_page %}
+    <li class="previous">
+      {% if paginator.previous_page == 1 %}
+      <a href="{{ base }}/company/blogs/">&larr; Newer</a>
+      {% else %}
+      <a href="{{ base }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
+      {% endif %}
+    </li>
+    {% else %}
+    <li class="previous disabled">
+      <a>&larr; Newer</a>
+    </li>
+    {% endif %}
+
+    <li>
+      <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    </li>
+
+    {% if paginator.next_page %}
+    <li class="next">
+      <a href="{{ base }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
+    </li>
+    {% else %}
+    <li class="next disabled">
+      <a>Older &rarr;</a>
+    </li>
+    {% endif %}
+
+  </ul>
 </div>

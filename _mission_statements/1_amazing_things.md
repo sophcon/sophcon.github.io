@@ -1,7 +1,7 @@
 ---
 title: Do amazing things every day
 icon: fa-rocket
-brief_description: Lorem ipsum dolor sit amet, 
+brief_description: We believe it is essential for everyone to have a sense of accomplishment every day and encourage our employees to do amazing things, every day. By fostering a culture of professionals which are pushing boundaries, we provide the best value to our customers, day in and day out. 
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.

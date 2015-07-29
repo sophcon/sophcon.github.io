@@ -2,24 +2,40 @@
 title: Services
 layout: default
 ---
+
+{% include list_override.html %}
+{% include base.html %}
 <section class="slice white bb animate-hover-slide">
     <div class="wp-section">
         <div class="container">
-            <p style="margin-bottom:20px;">
-            <span class="primary-letter style-3 base">L</span>
-            orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            
             <div class="section-title-wr">
                 <h3 class="section-title left">
-                    <span>What we do</span>
+                    <span>What we offer</span>
                 </h3>
             </div>
             {% assign displayServices = site.services | where:"service_type", "ServiceOffering" %}
             {% for service in site.services %}
-            {{ service.output }}
+            {% capture theCycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            <div class="row ">
+                <div class="wp-block default">
+                  {% if theCycle == 'even' %}
+                  <div class="wp-block-body col-md-8">
+                    <h2 class="title">{{ service.title }}</h2>
+                    {{ service.content }}
+                  </div>
+                  {% endif %}
+                  <div class="col-md-4" style="padding-right:0;padding-left:0;">
+                    <img alt="" src="{{base}}/{{service.img_url}}" class="img-responsive">
+                  </div>
+                  {% if theCycle == 'odd' %}
+                  <div class="wp-block-body col-md-8">
+                    <h2 class="title">{{ service.title }}</h2>
+                    {{ service.content }}
+                  </div>
+                  {% endif %}
+              </div>
+            </div>
             {% endfor %}
         </div>
     </div>

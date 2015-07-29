@@ -12,16 +12,19 @@ jQuery("#layerslider").layerSlider({
 $(document).ready(function() {
   function bindNavbar() {
     if ($(window).width() > 768) {
-      $('.navbar-default .dropdown').on('mouseover', function() {
+      var handlerIn = function(event) {
         $('.dropdown-toggle', this).next('.dropdown-menu').show();
-      }).on('mouseout', function() {
+      }
+      var handlerOut = function(event) {
         $('.dropdown-toggle', this).next('.dropdown-menu').hide();
-      });
-      $('.dropdown-toggle').click(function() {
+      }
+      var click = function() {
         if ($(this).next('.dropdown-menu').is(':visible')) {
           window.location = $(this).attr('href');
         }
-      });
+      };
+      $('.navbar-default .dropdown').hover(handlerIn, handlerOut);
+      $('.dropdown-toggle').click(click);
     } else {
       $('.navbar-default .dropdown').off('mouseover').off('mouseout').off('click');
     }

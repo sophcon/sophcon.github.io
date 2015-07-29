@@ -20,8 +20,8 @@
 - title: "Resources"
   url: "/resources/"
 
-- title: "Community"
-  url: "/community/"
+#- title: "Community"
+#  url: "/community/"
 
 - title: "Company"
   url: "/company/about/"

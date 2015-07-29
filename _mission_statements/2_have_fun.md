@@ -1,7 +1,7 @@
 ---
 title: Have fun, be casual
 icon: fa-smile-o
-brief_description: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+brief_description: It's our philosophy that happy people perform better. This starts with our company and extends to our customers. We strive to keep optimism conscious part of our everyday work.
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.

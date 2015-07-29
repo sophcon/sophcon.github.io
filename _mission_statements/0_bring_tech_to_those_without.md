@@ -1,7 +1,7 @@
 ---
-title: Bring technology to those who are without
+title: Bring solutions to those who need it
 icon: fa-laptop
-brief_description: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+brief_description: Whether you own and operate a small business or work in a large enterprise, there will be times when you need a solution to your business related issues. Sophcon has exposure to many different industries and can provide a quality solution to meet your needs.
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.

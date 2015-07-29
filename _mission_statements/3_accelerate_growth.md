@@ -1,7 +1,7 @@
 ---
-title: Accelerate their growth
-icon: fa-trophy
-brief_description: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+title: Produce measurable value, accelerate growth
+icon: fa-line-chart
+brief_description: Identifying goals and devising means for measuring progress allows Sophcon and it's customers to make more informed decisions sooner. Allowing for rapid growth and quicker goal attainment. This concept is an essential part of our offerings.
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.

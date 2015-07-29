@@ -1,0 +1,26 @@
+---
+title: Approach
+layout: default_narrow
+---
+{% include list_override.html %}
+{% include base.html %}
+
+![Envisioning]({{base}}/images/prv/col-draw-img-4.jpg)
+
+##### Envisioning
+Sophcon works shoulder-to-shoulder with it's customers to understand their business problems and goals. Based on Sophcon's experiences, discussions           about what the solutioning.
+
+##### Scoping
+* Breaking the solution into manageable projects.
+* Identifying existing state, dependencies, blockers, milestones (external and internal), support requirements
+* Result: good idea of what it will take to execute.
+
+##### Executing
+Scrum/agile approach
+Continuous Delivery / Continuous Deployment
+
+##### Supporting
+Project close-out
+Documentation
+Technical Knowledge Transfer
+Support Requests

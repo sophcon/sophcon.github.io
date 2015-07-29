@@ -28,3 +28,9 @@ ul.social-icons li.linkedin:hover{
 	background:#43609c;
 	color:#fff
 }
+
+.post-desc{
+  height:50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
