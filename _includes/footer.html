@@ -9,9 +9,11 @@
                     <h4>Contact us</h4>
                     <ul>
                         <li>{{ contact.street_address }}, {{ contact.city }} - {{ contact.country }}</li>
-                        <li>Phone: {{ contact.phone }} | Fax: {{ contact.fax }} </li>
+                        <li>Phone: {{ contact.phone }} {% if contact.fax != nil  %}| Fax: {{ contact.fax }}{% endif %} </li>
                         <li>Email: <a href="mailto:{{ contact.email }}" title="Email Us">{{ contact.email }}</a></li>
+                        {% if contact.skype != nil  %}
                         <li>Skype: <a href="skype:{{ contact.skype }}?call" title="Skype us">{{ contact.skype }}</a></li>
+                        {% endif %}
                         <li></li>
                     </ul>
                 </div>
@@ -36,7 +38,7 @@
                 <div class="col col-social-icons">
                     <h4>Follow us</h4>
                     {% for social in socials %}
-                    <a href="{{ social.url }}"><i class="fa {{ social.icon }}"></i></a>
+                    <a target="_blank" href="{{ social.url }}"><i class="fa {{ social.icon }}"></i></a>
                     {% endfor %}
                 </div>
             </div>

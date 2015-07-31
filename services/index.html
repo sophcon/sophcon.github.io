@@ -8,7 +8,7 @@ layout: default
 <section class="slice white bb animate-hover-slide">
     <div class="wp-section">
         <div class="container">
-            
+
             <div class="section-title-wr">
                 <h3 class="section-title left">
                     <span>What we offer</span>
@@ -20,7 +20,7 @@ layout: default
             <div class="row ">
                 <div class="wp-block default">
                   {% if theCycle == 'even' %}
-                  <div class="wp-block-body col-md-8">
+                  <div class="wp-block-body col-md-8 hidden-xs">
                     <h2 class="title">{{ service.title }}</h2>
                     {{ service.content }}
                   </div>
@@ -28,8 +28,12 @@ layout: default
                   <div class="col-md-4" style="padding-right:0;padding-left:0;">
                     <img alt="" src="{{base}}/{{service.img_url}}" class="img-responsive">
                   </div>
+                  <div class="wp-block-body col-md-8 hidden-sm hidden-md hidden-lg">
+                    <h2 class="title">{{ service.title }}</h2>
+                    {{ service.content }}
+                  </div>
                   {% if theCycle == 'odd' %}
-                  <div class="wp-block-body col-md-8">
+                  <div class="wp-block-body col-md-8 hidden-xs">
                     <h2 class="title">{{ service.title }}</h2>
                     {{ service.content }}
                   </div>

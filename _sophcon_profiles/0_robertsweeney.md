@@ -5,27 +5,27 @@ avatar: null
 avatar_url: https://avatars0.githubusercontent.com/u/301574?v=3&s=400
 socials:
   - name: "Facebook"
-    url: www.facebook.com
+    url: http://www.facebook.com/robert.a.sweeney
     icon: fa-facebook
     icon_bg: facebook
     can_contact: true
-  - name: "Google+"
-    url: www.googleplus.com
-    icon: fa-google-plus
-    icon_bg: google
-    can_contact: true
+  #- name: "Google+"
+  #  url: www.googleplus.com
+  #  icon: fa-google-plus
+  #  icon_bg: google
+  #  can_contact: true
   - name: "LinkedIn"
-    url: www.linkedin.com
+    url: https://www.linkedin.com/pub/robert-sweeney/0/b08/52
     icon: fa-linkedin
     icon_bg: linkedin
     can_contact: true
   - name: "Twitter"
-    url: www.twitter.com
+    url: https://twitter.com/sweeney_robb
     icon: fa-twitter
     icon_bg: twitter
     can_contact: true
   - name: "Github"
-    url: www.github.com
+    url: https://github.com/sweeneyrobb
     icon: fa-github
     icon_bg: github
     can_contact: false

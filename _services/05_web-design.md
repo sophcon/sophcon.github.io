@@ -3,10 +3,12 @@ title: Web Design &amp; Development
 service_type: ServiceOffering
 img_url: images/prv/col-img-4.jpg
 icon: fa-cloud
-brief_description: Allow Sophcon to create you a custom web solution to help you reach a wider population.
+brief_description: Since the advent of the internet, a myriad of technologies have cropped up, all with the promise of improving your web success. Navigating these various offerings may be overwhelming. Let Sophcon’s seasoned professionals assist you with identifying and implementing the right web solution for your business needs.
 ---
 
-Let our team of experience professionals create you a custom web solution that fits your needs.  We will sit with you and spend time to understand your vision and design a web solution that represents your organization.
+Since the advent of the internet, a myriad of technologies have cropped up, all with the promise of improving your web success. Navigating these various offerings may be overwhelming.
+
+Let Sophcon’s seasoned professionals assist you with identifying and implementing the right web solution for your business needs.  We will sit with you and spend time to understand your vision and design a web solution that represents your organization.
 
 Integrate with our *Enterprise Solution* or *Mobal* offerings to
 

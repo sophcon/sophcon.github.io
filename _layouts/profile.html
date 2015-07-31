@@ -21,7 +21,7 @@ layout: default
                   <div class="col-md-5">
                     <div class="social-media social-media-sm text-right">
                       {% for social in page.socials %}
-                      <a href="#" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
+                      <a href="{{ social.url }}" target="_blank" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
                       {% endfor %}
                     </div>
                   </div>
