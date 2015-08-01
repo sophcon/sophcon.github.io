@@ -1,9 +1,15 @@
 ---
 title: Application Archtecture
 service_type: ServiceOffering
-img_url: images/prv/school/school-6.jpg
+img_url: images/prv/ID-10065457.jpg
+img_alt: Application Archtecture - Image courtesy of KROMKRATHOG at FreeDigitalPhotos.net
 icon: fa-sitemap
-brief_description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+brief_description: Whether you need consultation on an existing application or development of a new one, let Sophcon be part of your transformation journey.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Whether you need consultation on an existing application or development of a new one, let Sophcon be part of your transformation journey. With our team of experience professionals, we will work with you to understand your vision, requirements and needs and help you archtect applications with today's emerging technologies to create an application of tomorrow.
+
+Application Archtureture Services:
+
+* Application Modernization
+* Continuous Delivery  

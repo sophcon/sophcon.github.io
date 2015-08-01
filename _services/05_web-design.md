@@ -2,6 +2,7 @@
 title: Web Design &amp; Development
 service_type: ServiceOffering
 img_url: images/prv/col-img-4.jpg
+img_alt: Web Design & Development
 icon: fa-cloud
 brief_description: Since the advent of the internet, a myriad of technologies have cropped up, all with the promise of improving your web success. Navigating these various offerings may be overwhelming. Let Sophcon’s seasoned professionals assist you with identifying and implementing the right web solution for your business needs.
 ---

@@ -1,11 +1,12 @@
 contact:
-  street_address: 123 Some Street
-  city: Merced
+  street_address: 1520 E. Hatch Rd, Suite C
+  city: Modesto
   state: California
+  zip: 95351
   country: United States
   email: info@sophcon.com
   phone: (209) 631-6818
-  fax:
+  fax: 
   skype:
 
 socials:

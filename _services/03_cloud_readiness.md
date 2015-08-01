@@ -1,9 +1,10 @@
 ---
 title: Cloud Readiness
 service_type: ServiceOffering
-img_url: images/prv/school/school-6.jpg
+img_url: images/prv/ID-100277122.jpg
+img_alt: Cloud Readiness - Image courtesy of hywards at FreeDigitalPhotos.net
 icon: fa-cloud
-brief_description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+brief_description: Let us help you take the next step. Allow Sophcon season professionals help you with anything from evaluating your current state to transitioning your IT solutions to the cloud.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Let us help you take the next step. Allow Sophcon season professionals help you with anything from evaluating your current state to transitioning your IT solutions to the cloud.
