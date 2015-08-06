@@ -53,37 +53,21 @@ layout: default
           <div id="mapCanvas" class="map-canvas no-margin"></div>
 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
               <div class="subsection">
                 <div class="section-title-wr">
                   <h3 class="section-title left"><span>Business info</span></h3>
                 </div>
                 <div class="contact-info">
                   <h5><i class="fa fa-map-marker"></i> Address</h5>
-                  <p>{{ contact.street_address }}, {{ contact.state }} - {{ contact.country }}</p>
+                  <p>{{ contact.street_address }}, {{ contact.state }}</p>
+                  <p>{{ contact.country }}</p>
 
                   <h5><i class="fa fa-envelope"></i> Email</h5>
                   <p><a href="mailto://{{ contact.email }}">{{ contact.email }}</a></p>
 
                   <h5><i class="fa fa-phone"></i> Phone</h5>
                   <p>{{ contact.phone }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="subsection">
-                <div class="section-title-wr">
-                  <h3 class="section-title left"><span>Program</span></h3>
-                </div>
-                <div class="contact-info">
-                  <h5><i class="fa fa-check"></i>  Monday - Friday</h5>
-                  <p>10:00 AM - 6:00 PM</p>
-
-                  <h5><i class="fa fa-times"></i> Saturday</h5>
-                  <p>Closed</p>
-
-                  <h5><i class="fa fa-times"></i> Sunday</h5>
-                  <p>Closed</p>
                 </div>
               </div>
             </div>
