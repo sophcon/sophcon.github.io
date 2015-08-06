@@ -6,7 +6,7 @@ contact:
   country: United States
   email: info@sophcon.com
   phone: (209) 631-6818
-  fax: 
+  fax:
   skype:
 
 socials:
@@ -35,3 +35,7 @@ socials:
     icon: fa-github
     icon_bg: github
     can_contact: false
+
+about_us:
+about_us_short: Sophcon is a fun and exciting company that works closely with our business partners to strategize solutions to solves there buisness needs.  Lets us help you grow your buisness and take it to the next level.
+history: Some history

@@ -8,7 +8,8 @@
                 <div class="col">
                     <h4>Contact us</h4>
                     <ul>
-                        <li>{{ contact.street_address }}, {{ contact.city }} - {{ contact.country }}</li>
+                        <li>{{ contact.street_address }}</li>
+                        <li> {{ contact.city }} - {{ contact.country }}</li>
                         <li>Phone: {{ contact.phone }} {% if contact.fax != nil  %}| Fax: {{ contact.fax }}{% endif %} </li>
                         <li>Email: <a href="mailto:{{ contact.email }}" title="Email Us">{{ contact.email }}</a></li>
                         {% if contact.skype != nil  %}
@@ -47,7 +48,7 @@
                 <div class="col">
                     <h4>About us</h4>
                     <p class="no-margin">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas
+                        {{ site.data.sophcon-info.about_us_short }}  Take the first step, contact us @ <a href="mailto:info@sophcon.com">info@sophcon.com</a>.
                     </p>
                 </div>
             </div>
@@ -55,4 +56,3 @@
 
     </div>
 </footer>
-</div>

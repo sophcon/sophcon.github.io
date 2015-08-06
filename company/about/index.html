@@ -3,7 +3,7 @@ title: About Us
 layout: default
 ---
 {% include base.html %}
-<section class="slice p-15">
+<section class="slice p-15 bb">
   <div class="wp-section">
     <div class="container">
       <div id="aboutUsCarousel" class="carousel carousel-1 slide color-two-l" data-ride="carousel">
@@ -32,33 +32,60 @@ layout: default
     </div>
   </div>
 </section>
-<section class="slice white bt bb">
+<section class="slice light-gray bb">
+  <!--div class="wp-section"-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <a href="/company/blogs/">
+            <i class="fa fa-rss-square fa-5x"></i>
+            <h4>Blogs</h2>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <a href="/company/news/">
+            <i class="fa fa-newspaper-o fa-5x"></i>
+            <h4>News</h2>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <a href="/company/contact/">
+            <i class="fa fa-envelope-o fa-5x"></i>
+            <h4>Contact Us</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  <!--/div-->
+</section>
+<section class="slice bg-base">
   <div class="wp-section ">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="section-title-wr">
-            <h3 class="section-title left"><span>About us</span></h3>
+            <h3 class="section-title left c-white"><span>About us</span></h3>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, feugiat delicata liberavisse id cum, no quo maiorum intelleget, liber regione eu sit. Mea cu case ludus integre, vide viderer eleifend ex mea. His at soluta regione diceret, cum et atqui placerat petentium. Lorem ipsum dolor
-            sit amet, feugiat delicata liberavisse id cum, no quo maiorum intelleget, liber regione eu sit. Mea cu case ludus integre, vide viderer eleifend.
+            {{ site.data.sophcon-info.about_us_short }}
+          </p>
+          <p>
+            {{ site.data.sophcon-info.about_us }}
           </p>
         </div>
         <div class="col-md-6">
           <div class="section-title-wr">
-            <h3 class="section-title left"><span>Our history</span></h3>
+            <h3 class="section-title left c-white"><span>Our history</span></h3>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, feugiat delicata liberavisse id cum, no quo maiorum intelleget, liber regione eu sit. Mea cu case ludus integre, vide viderer eleifend ex mea. His at soluta regione diceret, cum et atqui placerat petentium. Lorem ipsum dolor
-            sit amet, feugiat delicata liberavisse id cum, no quo maiorum intelleget, liber regione eu sit. Mea cu case ludus integre, vide viderer eleifend.
+            {{ site.data.sophcon-info.history }}
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="slice bg-base">
+<section class="slice bg-base hidden">
   <div class="wp-section">
     <div class="container">
       <div id="commentsCarousel" class="carousel carousel-1 slide color-two-l" data-ride="carousel">
@@ -107,9 +134,18 @@ layout: default
     <div class="container">
       {% for profile in site.sophcon_profiles %}
       {% capture theCycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-      {% if theCycle == 'odd' %}
       <div class="row ">
-        <div class="col-md-6">
+        {% if theCycle == 'odd' %}
+        <div class="col-md-6 visible-md visible-lg">
+          {% if profile.avatar != null %}
+          <img src="{{ base }}/{{ profile.avatar }}" class="img-responsive" alt="" style="max-height:309px">
+          {% else %}
+          <img src="{{ profile.avatar_url }}" class="img-responsive" alt="" style="max-height:309px">
+          {% endif %}
+        </div>
+        {% endif %}
+        <!-- For mobile support -->
+        <div class="col-md-6 visible-xs visible-sm">
           {% if profile.avatar != null %}
           <img src="{{ base }}/{{ profile.avatar }}" class="img-responsive" alt="" style="max-height:309px">
           {% else %}
@@ -124,7 +160,7 @@ layout: default
             <div class="col-md-5">
               <div class="social-media social-media-sm text-right">
                 {% for social in profile.socials %}
-                <a href="#" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
+                <a href="{{ social.url }}" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
                 {% endfor %}
               </div>
             </div>
@@ -136,38 +172,16 @@ layout: default
             {{ profile.about_me_short }}
           </p>
         </div>
-      </div>
-      {% else %}
-      <div class="row ">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-7">
-              <h4 class="title">{{ profile.job_title }}</h4>
-            </div>
-            <div class="col-md-5">
-              <div class="social-media social-media-sm text-right">
-                {% for social in profile.socials %}
-                <a href="#" title="{{ social.name }}"><i class="fa {{ social.icon }} {{ social.icon_bg }}"></i></a>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-          <h5 class="title title-md c-light-gray">
-            <a href="{{ base }}/company/about/{{ profile.title | replace: " ", "-" | downcase }}/">{{ profile.title }}</a>
-          </h5>
-          <p>
-            {{ profile.about_me_short }}
-          </p>
-        </div>
-        <div class="col-md-6">
+        {% if theCycle == 'even' %}
+        <div class="col-md-6 visible-md visible-lg">
           {% if profile.avatar != null %}
           <img src="{{ base }}/{{ profile.avatar }}" class="img-responsive" alt="" style="max-height:309px">
           {% else %}
           <img src="{{ profile.avatar_url }}" class="img-responsive" alt="" style="max-height:309px">
           {% endif %}
         </div>
+        {% endif %}
       </div>
-      {% endif %}
       <hr />
       {% endfor %}
     </div>
