@@ -11,10 +11,9 @@ emptyArray: []
         <div class="col-md-12">
           <div class="text-center">
             <h4><i class="fa fa-users fa-3x"></i></h4>
-            <h2>Share news and events in a new way: Timeline</h2>
+            <h2>Sophcon News</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus.
-              <br> Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
+              
             </p>
             <span class="clearfix"></span>
           </div>
@@ -25,9 +24,9 @@ emptyArray: []
 </section>
 <!-- Create a array of distinct years sorted descending -->
 {% assign years = page.emptyArray %}
-{% assign sortedArticles = (site.news_articles | sort: "created_date" | reverse) %}
+{% assign sortedArticles = (site.news_articles | sort: "news_date" | reverse) %}
 {% for article in sortedArticles %}
-  {% capture year %}{{ article.created_date | date: "%Y" }}{% endcapture %}
+  {% capture year %}{{ article.news_date | date: "%Y" }}{% endcapture %}
   {% if years contains year %}
    <!-- Do Nothing -->
   {% else %}
@@ -47,13 +46,13 @@ emptyArray: []
           {% assign isFirst = true %}
           {% for article in sortedArticles %}
             <!-- Used capture in order to be able to apply date format to get just the year from the date. -->
-            {% capture articleYear %}{{ article.created_date | date: "%Y" }}{% endcapture %}
+            {% capture articleYear %}{{ article.news_date | date: "%Y" }}{% endcapture %}
             {% if articleYear == year %}
               {% if isFirst == true %}
-                <li class="event offset-first">
+              <li class="event offset-first">
                 {% assign isFirst = false %}
               {% else %}
-                <li class="event">
+              <li class="event">
               {% endif %}
               {{ article.output }}
               </li>

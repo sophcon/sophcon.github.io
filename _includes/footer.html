@@ -4,10 +4,10 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="col">
-                    <h4>Contact us</h4>
-                    <ul>
+                    <h4 class="text-center">Contact us</h4>
+                    <ul class="text-center">
                         <li>{{ contact.street_address }}</li>
                         <li> {{ contact.city }} - {{ contact.country }}</li>
                         <li>Phone: {{ contact.phone }} {% if contact.fax != nil  %}| Fax: {{ contact.fax }}{% endif %} </li>
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <!--<div class="col-md-3">
                 <div class="col">
                     <h4>Mailing list</h4>
                     <p>Sign up if you would like to receive occasional treats from us.</p>
@@ -33,20 +33,22 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div>-->
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="col col-social-icons">
-                    <h4>Follow us</h4>
-                    {% for social in socials %}
-                    <a target="_blank" href="{{ social.url }}"><i class="fa {{ social.icon }}"></i></a>
-                    {% endfor %}
+                    <h4 class="text-center">Follow us</h4>
+                    <div class="text-center">
+                      {% for social in socials %}
+                      <a target="_blank" href="{{ social.url }}"><i class="fa {{ social.icon }}"></i></a>
+                      {% endfor %}
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="col">
-                    <h4>About us</h4>
+                    <h4 class="text-center">About us</h4>
                     <p class="no-margin">
                         {{ site.data.sophcon-info.about_us_short }}  Take the first step, contact us @ <a href="mailto:info@sophcon.com">info@sophcon.com</a>.
                     </p>
