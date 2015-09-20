@@ -2,7 +2,7 @@
 title: MB Sports
 layout: client
 client_img: images/clients/mbsports/mb-sports.png
-site_url: http://www.mbsports.net
+site_url: http://mbsportsusa.net
 industry: Manufacture
 released_date: 2015-01-08 00:00:00
 tech_used:
@@ -15,8 +15,7 @@ tech_used:
 carousel_imgs:
   - url: images/clients/mbsports/mb-sports.png
   - url: images/clients/mbsports/mb-sports2.png
-  - url: images/clients/mbsports/mb-sports3.png
-brief_description: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
+brief_description: Sophcon revamped MB Sports public web presence (www.mbsports.net). The MB Sports web presence has not had a substantial face-lift in roughly 3-years. MB Sports wanted to have a larger focus on mobile devices than they had in the past.
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
