@@ -36,7 +36,7 @@ layout: default
         </div>
       </section>
       <hr class="delimiter no-margin">
-      <section class="slice light-gray">
+      <!--<section class="slice light-gray">
         <div class="wp-section ">
           <div class="container">
             <div class="row">
@@ -53,11 +53,15 @@ layout: default
                   <h3 class="section-title left"><span>My goals</span></h3>
                 </div>
                 <p>
-                  {{ page.goals }}
+                  <ul style="list-style-type: circle;">
+                  {%for goal in page.goals %}
+                    <li>{{goal}}</li>
+                  {%endfor%}
+                  </ul>
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
     </div>

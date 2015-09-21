@@ -58,6 +58,34 @@ layout: default
     </div>
   <!--/div-->
 </section>
+<section class="slice bg-white bb">
+  <div class="wp-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title-wr">
+              <h3 class="section-title left"><span>Our Mission</span></h3>
+          </div>
+          {% for missionStatement in site.mission_statements %}
+          {% cycle 'add rows': '<div class="row">', nil %}
+            <div class="col-md-6">
+              <div class="short-feature">
+                <div class="feature-icon">
+                  <i class="fa {{ missionStatement.icon }}"></i>
+                </div>
+                <div class="feature-txt">
+                  <h3 style="text-transform: none;">{{ missionStatement.title }}</h3>
+                  <p>{{ missionStatement.brief_description }} {{ mssionStatement.icon }}</p>
+                </div>
+              </div>
+            </div>
+          {% cycle 'close rows': nil, '</div>' %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="slice bg-base">
   <div class="wp-section ">
     <div class="container">

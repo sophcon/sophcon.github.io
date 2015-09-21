@@ -31,8 +31,8 @@
       sub2Nav:
         - sub2Title: "Robert Sweeney"
           sub2Url: "/company/about/robert-sweeney/"
-        #- sub2Title: "Jane Doe"
-        #  sub2Url: "/company/about/jane-doe/"
+        - sub2Title: "Yer Yang"
+          sub2Url: "/company/about/yer-yang/"
     - subTitle: "Blogs"
       subUrl: "/company/blogs/"
     - subTitle: "News"
