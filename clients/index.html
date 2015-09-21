@@ -51,8 +51,8 @@ emptyArray: []
                   <p>
                     {{ client.brief_description }}
                   </p>
-                  <button href="{{base}}/clients/{{ client.title | replace: " ", "-" | downcase }}/" class="navigate-on-click btn btn-sm btn-white btn-icon fa-link mt-10"><span>Read more</span></button>
-                  <button href="{{client.site_url}}" class="navigate-on-click btn btn-sm btn-white btn-icon fa-external-link mt-10"><span>Go to site</span></button>
+                  <button onClick="parent.location = '{{base}}/clients/{{ client.title | replace: " ", "-" | downcase }}/'" class="navigate-on-click btn btn-sm btn-white btn-icon fa-link mt-10"><span>Read more</span></button>
+                  <button onClick="parent.location = '{{client.site_url}}'" class="navigate-on-click btn btn-sm btn-white btn-icon fa-external-link mt-10"><span>Go to site</span></button>
                 </div>
               </a>
               <h2 class="title">{{ client.title }}</h2>

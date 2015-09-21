@@ -3,7 +3,7 @@ title: ALM & Developer Mentoring
 service_type: ServiceOffering
 img_url: images/prv/school/school-6.jpg
 img_alt: Mentoring
-icon: fa-users
+icon: fa-book
 brief_description: Accelerate your development team's knowledge through a custom tailored engagement with Sophcon.
 ---
 

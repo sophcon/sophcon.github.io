@@ -2,8 +2,8 @@
 title: Application Lifecycle Management (ALM) & Agile
 service_type: ServiceOffering
 img_url: images/prv/alm.jpg
-img_alt: Mentoring
-icon: fa-users
+img_alt: ALM Management & Agile
+icon: fa-refresh
 brief_description: Improve your teams ability to deliver software faster and more reliably through the implementation of an effective ALM and/or Agile discipline.
 ---
 

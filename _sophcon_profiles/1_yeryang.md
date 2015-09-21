@@ -15,7 +15,7 @@ socials:
   #  icon_bg: google
   #  can_contact: true
   - name: "LinkedIn"
-    url: https://www.linkedin.com/profile/view?id=AAIAAAN2L4YBKRfTTYzeM8yrfyAar-Hl-_TAox0&trk=nav_responsive_tab_profile
+    url: https://www.linkedin.com/pub/yer-yang/17/549/4b2
     icon: fa-linkedin
     icon_bg: linkedin
     can_contact: true

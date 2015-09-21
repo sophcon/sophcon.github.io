@@ -2,7 +2,7 @@
 title: MB Sports
 layout: client
 client_img: images/clients/mbsports/mb-sports.png
-site_url: http://www.mbsports.net
+site_url: http://www.mbsportsusa.com
 industry: Manufacture
 released_date: 2015-01-08 00:00:00
 tech_used:
@@ -12,6 +12,9 @@ tech_used:
   - tech:
     name: MarkDown
     url: http://daringfireball.net/projects/markdown/
+  - tech:
+    name: Bootstrap
+    url: http://getbootstrap.com/
 carousel_imgs:
   - url: images/clients/mbsports/mb-sports.png
   - url: images/clients/mbsports/mb-sports2.png
