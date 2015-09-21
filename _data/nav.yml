@@ -11,7 +11,7 @@
   url: "/clients/"
   subNav:
      - subTitle: "MB Sports"
-      subUrl: "/clients/mb-sports/"
+       subUrl: "/clients/mb-sports/"
     #- subTitle: "Realtor Executive"
     #  subUrl: "/clients/realtor-executive/"
     #- subTitle: "Realtor 2"
