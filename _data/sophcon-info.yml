@@ -11,7 +11,7 @@ contact:
 
 socials:
   - facebook:
-    url: http://www.facebook.com/sophcon
+    url: http://facebook.com/sophcon
     icon: fa-facebook
     icon_bg: facebook
     can_contact: true
@@ -21,17 +21,17 @@ socials:
   #  icon_bg: google
   #  can_contact: true
   - linkedin:
-    url: http://www.linkedin.com/in/sophcon
+    url: http://linkedin.com/in/sophcon
     icon: fa-linkedin
     icon_bg: linkedin
     can_contact: true
   - twitter:
-    url: http://www.twitter.com/sophcon
+    url: http://twitter.com/sophcon
     icon: fa-twitter
     icon_bg: twitter
     can_contact: true
   - github:
-    url: http://www.github.com/sophcon
+    url: http://github.com/sophcon
     icon: fa-github
     icon_bg: github
     can_contact: false
