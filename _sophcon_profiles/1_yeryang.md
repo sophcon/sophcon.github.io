@@ -15,7 +15,7 @@ socials:
   #  icon_bg: google
   #  can_contact: true
   - name: "LinkedIn"
-    url: https://www.linkedin.com/pub/yer-yang/17/549/4b2
+    url: https://www.linkedin.com/in/yeryang
     icon: fa-linkedin
     icon_bg: linkedin
     can_contact: true
