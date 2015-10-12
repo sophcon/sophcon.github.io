@@ -11,7 +11,7 @@ Since the advent of the internet, a myriad of technologies have cropped up, all 
 
 Let Sophcon’s seasoned professionals assist you with identifying and implementing the right web solution for your business needs.  We will sit with you and spend time to understand your vision and design a web solution that represents your organization.
 
-Integrate with our *Enterprise Solution* or *Mobal* offerings to
+Integrate with our *Enterprise Solution* or *Mobile* offerings to
 
 * Improve efficiency through system integration and/or custom LOB solutions
 * Improve sales by providing vital information about your clients through BI solutions

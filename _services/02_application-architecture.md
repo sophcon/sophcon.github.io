@@ -1,15 +1,19 @@
 ---
-title: Application Archtecture
+title: Application Architecture
 service_type: ServiceOffering
 img_url: images/prv/ID-10065457.jpg
-img_alt: Application Archtecture - Image courtesy of KROMKRATHOG at FreeDigitalPhotos.net
+img_alt: Application Architecture - Image courtesy of KROMKRATHOG at FreeDigitalPhotos.net
 icon: fa-sitemap
-brief_description: Whether you need consultation on an existing system or development of a new one, let Sophcon be part of your transformation journey.
+brief_description: Whether you need consultation on an existing system or looking develop of a new one, let Sophcon be part of your transformation journey.
 ---
 
-Whether you need consultation on an existing system or development of a new one, let Sophcon be part of your transformation journey. With our team of experience professionals, we will work with you to understand your vision and requirements and help you archtect a solution with today's emerging technologies to create an application for tomorrow.
+Whether you need consultation on an existing system or looking develop of a new
+one, let Sophcon be part of your transformation journey. Our team of experience
+professionals, we will work with you to understand your vision, goals, and
+requirements. We will assist you in designing a solution today with the
+considerations of tomorrow.
 
-Application Archtureture Services:
+Application Architecture Services include:
 
 * Application Modernization
 * Continuous Delivery  
