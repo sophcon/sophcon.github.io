@@ -31,18 +31,12 @@ socials:
     can_contact: false
 about_me_short:
   - >
-    Robert Sweeney is a solutions architect, developer, technology enthusiast, and proud father. Robert has been developing custom software professionally, for over 16 years. He started his facination with software working with the WIN32 API programming and Visual Basic 3.0. During his tenure with Dell Services Robert has held roles as a Technical Consultant, Senior Technical Advisor, and Principal Consultant, specializing in Custom .NET Development, SharePoint 2013, Office 365 and Windows Azure.
-
-  - >
-    Although Robert historically has been developing against the Microsoft stack, he enjoys learning about other platforms and technologies. He is also an advocate for small businesses and spends time helping out with his wife’s small business and assisting other small businesses with his founded services company Sophcon.
-
-  - |
-    test something hendrerit
-
-  - |
-    even more here!
-  - >-
-    testing this guy out.
+    <p>
+        Robert Sweeney is a solutions architect, developer, technology enthusiast, and proud father. Robert has been developing custom software professionally, for over 16 years. He started his facination with software working with the WIN32 API programming and Visual Basic 3.0. During his tenure with Dell Services Robert has held roles as a Technical Consultant, Senior Technical Advisor, and Principal Consultant, specializing in Custom .NET Development, SharePoint 2013, Office 365 and Windows Azure.
+    </p>
+    <p>
+        Although Robert historically has been developing against the Microsoft stack, he enjoys learning about other platforms and technologies. He is also an advocate for small businesses and spends time helping out with his wife’s small business and assisting other small businesses with his founded services company Sophcon.
+    </p>
 
 goals: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
 
