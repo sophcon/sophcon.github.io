@@ -1,6 +1,6 @@
 ---
 title: Yer Yang
-job_title: Co-Partner
+job_title: Cofounder / Architect
 avatar: null
 avatar_url: https://en.gravatar.com/userimage/83669857/80ce53d8daf67bdd301b0ebf979e30b1?size=400
 socials:
