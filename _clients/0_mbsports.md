@@ -3,7 +3,7 @@ title: MB Sports
 layout: client
 client_img: images/clients/mbsports/mb-sports.png
 site_url: http://mbsportsusa.com
-industry: Manufacture
+industry: Manufacturing
 released_date: 2015-09-28 00:00:00
 tech_used:
   - tech:
