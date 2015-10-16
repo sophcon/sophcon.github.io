@@ -2,7 +2,7 @@
 title: Yer Yang
 job_title: Cofounder / Architect
 avatar: null
-avatar_url: https://en.gravatar.com/userimage/83669857/80ce53d8daf67bdd301b0ebf979e30b1?size=400
+avatar_url: https://en.gravatar.com/userimage/83669857/00f36b7791b6dfe98978307db18735f7.png?size=400
 socials:
   - name: "Facebook"
     url: http://www.facebook.com/yer.yang.7

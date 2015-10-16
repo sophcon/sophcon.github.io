@@ -3,9 +3,9 @@ title: About Us
 layout: default
 ---
 {% include base.html %}
-<!--img class="hidden-md hidden-lg" src="{{base}}/images/prv/about-img-1.jpg" alt="" -->
 <section class="layer-slider-wrapper layer-slider-dynamic">
   <div id="aboutUsCarousel" class="carousel carousel-1 slide color-two-l" data-ride="carousel">
+    <div class="bg-base" style="height:5px"></div>
     <!-- Indicators -->
     <ol class="carousel-indicators hide">
       <li data-target="#aboutUsCarousel" data-slide-to="0" class=""></li>
@@ -27,6 +27,34 @@ layout: default
     <a class="right carousel-control" href="#aboutUsCarousel" data-slide="next">
       <i class="fa fa-angle-right"></i>
     </a>
+    <div class="bg-base" style="height:5px"></div>
+  </div>
+</section>
+<section class="slice">
+  <div class="wp-section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-title-wr">
+            <h3 class="section-title left"><span>About us</span></h3>
+          </div>
+          <p>
+            {{ site.data.sophcon-info.about_us_short }}
+          </p>
+          <p>
+            {{ site.data.sophcon-info.about_us }}
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="section-title-wr">
+            <h3 class="section-title left"><span>Our history</span></h3>
+          </div>
+          <p>
+            {{ site.data.sophcon-info.history }}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <div class="container-fluid text-center" style="margin: 0; padding: 0">
@@ -49,85 +77,6 @@ layout: default
     </div>
   </a>
 </div>
-<!--<section class="slice light-gray bb hidden-sm hidden-xs">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-          <a href="/company/blogs/">
-            <i class="fa fa-rss-square fa-5x"></i>
-            <h4>Blogs</h2>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-          <a href="/company/news/">
-            <i class="fa fa-newspaper-o fa-5x"></i>
-            <h4>News</h2>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-          <a href="/company/contact/">
-            <i class="fa fa-envelope-o fa-5x"></i>
-            <h4>Contact Us</h2>
-          </a>
-        </div>
-      </div>
-    </div>
-</section>-->
-<section class="slice bg-white bb">
-  <div class="wp-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-title-wr">
-              <h3 class="section-title left"><span>Our Mission</span></h3>
-          </div>
-          {% for missionStatement in site.mission_statements %}
-          {% cycle 'add rows': '<div class="row">', nil %}
-            <div class="col-md-6">
-              <div class="short-feature">
-                <div class="feature-icon">
-                  <i class="fa {{ missionStatement.icon }}"></i>
-                </div>
-                <div class="feature-txt">
-                  <h3 style="text-transform: none;">{{ missionStatement.title }}</h3>
-                  <p>{{ missionStatement.brief_description }} {{ mssionStatement.icon }}</p>
-                </div>
-              </div>
-            </div>
-          {% cycle 'close rows': nil, '</div>' %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="slice bg-base">
-  <div class="wp-section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="section-title-wr">
-            <h3 class="section-title left c-white"><span>About us</span></h3>
-          </div>
-          <p>
-            {{ site.data.sophcon-info.about_us_short }}
-          </p>
-          <p>
-            {{ site.data.sophcon-info.about_us }}
-          </p>
-        </div>
-        <div class="col-md-6">
-          <div class="section-title-wr">
-            <h3 class="section-title left c-white"><span>Our history</span></h3>
-          </div>
-          <p>
-            {{ site.data.sophcon-info.history }}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="slice bg-base hidden">
   <div class="wp-section">
     <div class="container">
