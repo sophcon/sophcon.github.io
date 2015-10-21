@@ -5,7 +5,7 @@ contact:
   zip: 95351
   country: United States
   email: info@sophcon.com
-  phone: (209) 631-6818
+  phone: (209) 259-0792
   fax:
   skype:
 
@@ -21,15 +21,15 @@ socials:
   #  icon_bg: google
   #  can_contact: true
   - linkedin:
-    url: http://linkedin.com/in/sophcon
+    url: https://www.linkedin.com/company/sophcon
     icon: fa-linkedin
     icon_bg: linkedin
     can_contact: true
-  - twitter:
-    url: http://twitter.com/sophcon
-    icon: fa-twitter
-    icon_bg: twitter
-    can_contact: true
+  #- twitter:
+  #  url: http://twitter.com/sophcon
+  #  icon: fa-twitter
+  #  icon_bg: twitter
+  #  can_contact: true
   - github:
     url: http://github.com/sophcon
     icon: fa-github
