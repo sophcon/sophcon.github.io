@@ -30,7 +30,10 @@
       subUrl: "/company/about/"
     - subTitle: "Blogs"
       subUrl: "/company/blogs/"
-    - subTitle: "News"
-      subUrl: "/company/news/"
+#    - subTitle: "News"
+#      subUrl: "/company/news/"
     - subTitle: "Contact Us"
       subUrl: "/company/contact/"
+
+- title: "News"
+  url: "/news/"
