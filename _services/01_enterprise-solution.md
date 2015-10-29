@@ -7,7 +7,7 @@ icon: fa-globe
 brief_description: Accessing to critical business information, is critical to enterprises. Sophcon has experience in building enterprise grade solutions across many industries.
 ---
 
-ccessing to critical business information, is critical to enterprises. Sophcon has experience in building enterprise grade solutions across many industries.
+Accessing to critical business information, is critical to enterprises. Sophcon has experience in building enterprise grade solutions across many industries.
 
 Our solutions are designed with specific attention to the following areas:
 
