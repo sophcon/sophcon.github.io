@@ -20,9 +20,9 @@ function initialize() {
   var contentString = '<div>' +
             '<div><img style="max-height:50px" src="/images/sophcon-logo.png" alt="Sophcon" /></div>' +
 					  '<p>Let us help you grow your business.</p>' +
-            '<div>Address: 1931 Faxon Dr., California</div>' +
-            '<div>Email: <a href="mailto:info@sophcon.com?Subject=Please%20Contact%20Me"><i class="fa fa-envelope-o"></i> info@sophcon.com</a></div>' +
-            '<div>Phone: (209) 259-0792</div></div>';
+            '<div><i class="fa fa-map-marker fa-fw"></i>1931 Faxon Dr., CA 95301</div>' +
+            '<div><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:info@sophcon.com?Subject=Please%20Contact%20Me">info@sophcon.com</a></div>' +
+            '<div><i class="fa fa-phone fa-fw"></i> (209) 259-0792</div></div>';
 
   var infowindow = new google.maps.InfoWindow({
       content: contentString

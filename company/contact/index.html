@@ -75,9 +75,11 @@ layout: default
                 </div>
                 <div class="contact-info">
                   <h5><i class="fa fa-map-marker"></i> Address</h5>
-                  <p>{{ contact.street_address }}, {{ contact.state }}</p>
-                  <p>{{ contact.country }}</p>
-
+                  <p>
+                    {{ contact.street_address }}, {{ contact.state }} <br />
+                    {{ contact.country }} {{ contact.zip }}<br />
+                  </p>
+                  
                   <h5><i class="fa fa-envelope"></i> Email</h5>
                   <p><a href="mailto://{{ contact.email }}">{{ contact.email }}</a></p>
 
