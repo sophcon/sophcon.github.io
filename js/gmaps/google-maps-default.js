@@ -1,7 +1,7 @@
 var map;
 
 function initialize() {
-  var myLatlng = new google.maps.LatLng(37.6081133, -120.969651);
+  var myLatlng = new google.maps.LatLng(37.340625, -120.5773507);
   var mapOptions = {
     zoom: 12,
 	scrollwheel: false,
@@ -17,8 +17,12 @@ function initialize() {
       title: 'Sophcon'
   });
 
-  var contentString = '<div class="info-window-content"><h2>Sophcon</h2>' +
-					  '<p>Some more details for directions or company informations...</p></div>';
+  var contentString = '<div>' +
+            '<div><img style="max-height:50px" src="/images/sophcon-logo.png" alt="Sophcon" /></div>' +
+					  '<p>Let us help you grow your business.</p>' +
+            '<div>Address: 1931 Faxon Dr., California</div>' +
+            '<div>Email: <a href="mailto:info@sophcon.com?Subject=Please%20Contact%20Me"><i class="fa fa-envelope-o"></i> info@sophcon.com</a></div>' +
+            '<div>Phone: (209) 259-0792</div></div>';
 
   var infowindow = new google.maps.InfoWindow({
       content: contentString

@@ -1,8 +1,8 @@
 contact:
-  street_address: 1520 E. Hatch Rd, Suite C
-  city: Modesto
+  street_address: 1931 Faxon Dr.
+  city: Atwater
   state: California
-  zip: 95351
+  zip: 95301
   country: United States
   email: info@sophcon.com
   phone: (209) 259-0792
@@ -11,7 +11,7 @@ contact:
 
 socials:
   - facebook:
-    url: http://facebook.com/sophcon
+    url: http://www.facebook.com/Sophcon-961582747247275
     icon: fa-facebook
     icon_bg: facebook
     can_contact: true
