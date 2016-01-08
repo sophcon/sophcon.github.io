@@ -27,7 +27,7 @@
 
 .timeline .event {
 	position: relative;
-	text-align: center;
+	/*text-align: center;*/
 	float: right;
 	clear: right;
 	width: 45%;
@@ -94,4 +94,8 @@
 .timeline .event:nth-child(2n):after {
 	right: -5%;
 	left: auto;
+}
+
+.timeline .event a {
+    color: #428bca;
 }

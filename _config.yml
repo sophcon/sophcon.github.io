@@ -4,6 +4,7 @@ title: Sophcon
 paginate: 10 # pagination based on number of posts
 paginate_path: "/company/blogs/page:num"
 markdown: kramdown
+future: true
 
 collections:
   services:
