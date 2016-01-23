@@ -17,7 +17,7 @@ layout: default
                 <div class="date">
                   <span class="icon"><i class="fa fa-calendar"></i></span>
                   <span class="month">{{ post.date | date: '%b' }}</span>
-                  <span class="day">{{ post.date | date: "%d" | plus:'0' }}</span>
+                  <span class="day">{{ post.date | date: '%d' | plus:'0' }}</span>
                 </div>
               </div>
               <div class="post-content-wr">
@@ -29,11 +29,16 @@ layout: default
                 <div class="post-content clearfix">
                   <div class="post-tags">Tags [{{ post.tags | join: ', ' }}]</div>
                   <div class="post-desc">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>{{ post.description }}</p>
                   </div>
                 </div>
                 <div class="post-meta-bot clearfix">
-                  <span class="post-author">WRITTEN BY <a href="#">{{ post.author }}</a></span>
+                  <span class="post-author">WRITTEN BY
+                    {% for author in post.author %}
+                    <a href='../about/{{ author | slugify }}'>{{ author }}</a>
+                    {% if forloop.last == false %},{% endif %}
+                    {% endfor %}
+                  </span>
                   <a href="{{ base }}{{ post.url }}" class="btn btn-sm btn-base">Read more</a>
                 </div>
               </div>

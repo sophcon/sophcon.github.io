@@ -40,13 +40,12 @@ This is all based on our rather small codebase rather straight-forward models.
 
 ## Just for kicks  ##
 
-After we had our application running on the new stack, we thought it would be an interesting exercise to build our application on an Ubuntu 15 machine. We installed DNVM on Ubuntu following the (github docs)[
-https://github.com/dotnet/coreclr/blob/master/Documentation/install/get-dotnetcore-dnx-linux.md]. After running the quick sample code successfully we ran a build of our source. Things worked rather flawlessly.
+After we had our application running on the new stack, we thought it would be an interesting exercise to build our application on an Ubuntu 15 machine. We installed DNVM on Ubuntu following the [github docs](https://github.com/dotnet/coreclr/blob/master/Documentation/install/get-dotnetcore-dnx-linux.md). After running the quick sample code successfully we ran a build of our source. Things worked rather flawlessly.
 
-We then installed Kestrel via (docs.asp.net)[https://docs.asp.net/en/latest/getting-started/installing-on-linux.html]. Ran `dnu web` and things just worked.
+We then installed Kestrel via [docs.asp.net](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html). Ran `dnu web` and things just worked.
 
 ## In Conclusion ##
 
-Our gripes really exist in that the documentation is pretty much all over the place. Things have changes so drastically through the beta, rc, rtm builds is very difficult to keep what's outdated and what's current sorted out. There are some interesting stumblings we've run acrossed as well. If you look at the most recent (dotnet.github.io)[http://dotnet.github.io/getting-started/] getting started page. It shows examples that are similar to those we've seen with `dnu` and `dnx` but falling under a single `dotnet` executable. Another thing is getting all the naming / versioning sorted out. This is INSANELY difficult to keep track of. .NET, .NET Core, CLR, Core Clr, 4.5.2, 5.0, 1.0...zomg!
+Our gripes really exist in that the documentation is pretty much all over the place. Things have changes so drastically through the beta, rc, rtm builds is very difficult to keep what's outdated and what's current sorted out. There are some interesting stumblings we've run acrossed as well. If you look at the most recent [dotnet.github.io](http://dotnet.github.io/getting-started/) getting started page. It shows examples that are similar to those we've seen with `dnu` and `dnx` but falling under a single `dotnet` executable. Another thing is getting all the naming / versioning sorted out. This is INSANELY difficult to keep track of. .NET, .NET Core, CLR, Core Clr, 4.5.2, 5.0, 1.0...zomg!
 
 Aside from the obligatory gripes,  we are very pleased with the cross platform story and moving to some deeper testing. So far so good. :)

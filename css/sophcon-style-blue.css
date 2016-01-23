@@ -34,3 +34,7 @@ ul.social-icons li.linkedin:hover{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+a {
+  color: #428bca !important;
+}
