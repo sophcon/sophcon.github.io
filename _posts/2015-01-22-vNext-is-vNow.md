@@ -9,13 +9,22 @@ modified: 2015-01-22T16:28:00-08:00
 author: [Robert Sweeney, Yer Yang]
 ---
 
+> Versions References
+>
+> * EntityFramework.MicrosoftSqlServer - 7.0.0-rc1-final
+> * EntityFramework.Commands - 7.0.0-rc1-final
+> * EntityFramework.MicrosoftSqlServer.Design - 7.0.0-rc1-final
+> * Microsoft.AspNet.Mvc - 6.0.0-rc1-final
+> * Microsoft.Dnx.Runtime - 1.0.0-rc1-final
+> * Microsoft.AspNet.Server.Kestrel - 1.0.0-rc1-final
+
 ## vNEXT is vNOW ##
 
 With recent announcements being made that .NET Core 1.0, ASP.NET Core 1.0, ASP.NET MVC Core 1.0 was RTM'd we felt this was a good time to considering porting some of applications to the new stack. In the process we ran across some pretty interesting challenges:
 
 ## Acquisition ##
 
-This was likely one of the more easier aspects to the entire process. On Windows this can be as simple as installing Visual Studio, however, we wanted a deeper understanding of the cross platform story so, we opted for the full blown CLI experience. Installing the .NET Version Manager (DNVM) as prescribed via the docs.asp.net site and downloading the most recent versions of the .NET Execution environment.
+This was likely one of the more easier aspects to the entire process. On Windows this can be as simple as installing Visual Studio, however, we wanted a deeper understanding of the cross platform story so, we opted for the full blown CLI experience. Installing the .NET Version Manager (DNVM) as prescribed via the [docs.asp.net](http://docs.asp.net) site and downloading the most recent versions of the .NET Execution environment.
 
 ## Project Structure ##
 
@@ -24,17 +33,22 @@ Next was wrapping our minds around the new project structure. We've learned abou
 As a site note; we can definitely notice is that the number of times you'll see a commit changes for the project.json will be fewer and likely more meaningful. Since, files in the directory structure are included by default. This made it easy to copy and paste most of the existing directory structure over and attempt to issue builds.
 
 ### NuGet ###
+
 Another fairly interesting thing we noticed is that NuGet in the world of .NET Core has changed quite substantially from what we've expected from it in previous versions. Seems as if NuGet has been peared down to not deploying static content along with assemblies/etc. It seems as if this from a tooling perspective is being pushed into the [bower] space. `NuGet` now is mainly being used for dealing with coded dependencies and the related dependency graph.
 
 Some documentation points to utilizing the PowerShell commands for adding NuGet packages to a project (e.g. `Install-Package`) this is pretty misleading. We found that utilizing the `dnu install [package]` was pretty much right every single time, as this takes the extra set and adds the correct entries into your `project.json`.
 
 ## The bulk of it ##
 
-Most of the broken builds we're able to resolve with adding the correct dependecies. However, we also decided to make a port to Entity Framework 7.0
+Most of the broken builds we're able to resolve with adding the correct dependencies. However, we also decided to make a port to Entity Framework 7.0.
 
-The EF namespaces were swapped out, basically `System.Data.Entity` --> `Microsoft.Data.Entity`. Connection strings used to be obtained in the `DBContext` base class constructor. Usually being passed `ConnectionStringName`, which was then used to look up the connection string in the `web.config` / `app.config`.
+We tried issuing `dnu install EntityFramework` and found that it worked and added `EntityFramework` version `7.0.0-beta4` into our `project.json` file (see below). With the new assembly added we decided to start porting over `EF` code. We didn't receive any errors until we build the project using `dnu build`. After issuing some Bing search, we found that the `EntityFramework` assembly was not the correct one to use. We removed the old package reference from the `project.json` and executing `dnu install EntityFramework.MicrosoftSqlServer`, added the correct assembly reference and build was fixed.
 
-Now in our `Startup` class, in the `ConfigureService` method, we now inject the `DBContextOptionsBuilder` directly into our `DBContext` with the ConnectionString information attached. Most of our modeling code remained the same. However, there were some changes to method names such as `WithRequired` is now `WithOne`. Additionally, the DB Context does not provide a `Find()` method, which we use pretty frequently. Luckily, there is some ` d` has put together a pretty decent extension method and suggested to the EF team. We'll keep an eye out on this one.
+![Alt wrong EF assembly]({{site.baseurl}}/images/blog/ef-packages.png)
+
+While porting over the legacy code, we found that the EF namespaces were swapped out, basically `System.Data.Entity` --> `Microsoft.Data.Entity`. Connection strings used to be obtained in the `DBContext` base class constructor. Usually being passed `ConnectionStringName`, which was then used to look up the connection string in the `web.config` / `app.config`.
+
+Now in our `Startup` class, in the `ConfigureService` method, we now inject the `DBContextOptionsBuilder` directly into our `DBContext` with the ConnectionString information attached. Most of our modeling code remained the same. However, there were some changes to method names such as `WithRequired` is now `WithOne`. Additionally, the DB Context does not provide a `Find()` method, which we use pretty frequently. Luckily, [bricelam](http://stackoverflow.com/users/475031/bricelam)  has put together a pretty decent extension method (see [Stack Overflow](http://stackoverflow.com/questions/29030472/dbset-doesnt-have-a-find-method-in-ef7/29082410#29082410)) and suggested to the EF team. We'll keep an eye out on this one.
 
 This is all based on our rather small codebase rather straight-forward models.
 
