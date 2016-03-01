@@ -39,7 +39,7 @@ about_me_short:
     </p>
 
 goals: Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.
-
+permalink: /company/about/robert-sweeney/
 ---
 
 Lorem ipsum dolor sit amet, molestiae honestatis an has. Eros habemus atomorum ad duo, vim in justo adolescens. Eius adipisci consequat et per. Has ea meliore nostrum deserunt, vix utroque atomorum no. Ea vel choro latine intellegam, augue partem vulputate ex mel.

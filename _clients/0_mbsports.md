@@ -1,5 +1,5 @@
 ---
-title: MB Sports
+title: "MB Sports"
 layout: client
 client_img: images/clients/mbsports/mb-sports.png
 site_url: http://mbsportsusa.com
@@ -34,6 +34,7 @@ carousel_imgs:
   - url: images/clients/mbsports/mb-sports.png
   - url: images/clients/mbsports/mb-sports2.png
 brief_description: Sophcon revamped MB Sports public web presence (www.mbsports.net). The MB Sports web presence has not had a substantial face-lift in roughly 3-years, with specific attention to mobile devices. In addition to the rollout of a new web presence, Sophcon was tasked with migrating their current email, web, and DNS hosting to an Office 365 service.
+permalink: /clients/mb-sports/
 ---
 ### The Challenge
 

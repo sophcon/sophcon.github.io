@@ -15,10 +15,10 @@ collections:
     output: false
   sophcon_profiles:
     output: true
-    permalink: "/company/about/:title/index.html"
+    permalink: "/company/about/:title/"
   clients:
     output: true
-    permalink: "/clients/:title/index.html"
+    permalink: "/clients/:title/"
 
 defaults:
   - scope:

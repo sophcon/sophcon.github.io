@@ -1,5 +1,5 @@
 ---
-title: Affordable Markers
+title: "Affordable Markers"
 layout: client
 client_img: images/clients/am/am-logo-red.jpg
 site_url: http://affordable-markers.com
@@ -12,6 +12,7 @@ tech_used:
 carousel_imgs:
   - url: images/clients/am/am-logo-red.jpg
 brief_description: In Development
+permalink: /clients/affordable-markers/
 ---
 ### The Challenge
 

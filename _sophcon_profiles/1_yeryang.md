@@ -30,8 +30,8 @@ socials:
     icon_bg: github
     can_contact: false
 about_me_short: Yer Yang received a Bachelor of Science in Computer Information Systems from DeVry University of Fremont, CA in 2006. With his degree, Yer went on to providing solutions, with a focus on software, for numerous organizations in different industries ranging from manufacturing, medical, and education. Through his work, he has proven to be a dedicated and a hard-working individual who strives to not only deliver on schedule but exceed expectation.  Yer is devoted and committed to his family and brings that same loyalty and dedication to those who he had the opportunity to work with.
-
 goals: ['To be part of a company that his children will one day be proud of', 'To be known not only as someone who provided an exceptional solution to a business need but to have provided the enjoyable experience while doing so', 'To enjoy what he does and who he works with each and every day.']
+permalink: /company/about/yer-yang/
 ---
 Yer Yang received a Bachelor of Science in Computer Information Systems from DeVry University of Fremont, CA in 2006. With his degree, he went on to providing solutions, with a focus on software, for numerous organizations in different industries ranging from manufacturing, medical, and education. Through his work, he has proven to be a dedicated and a hard-working individual who strives to not only deliver on schedule but exceed expectation.  Yer is devoted and committed to his family and brings that same loyalty and dedication to those who he had the opportunity to work with.
 
