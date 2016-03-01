@@ -1,3 +1,5 @@
+---
+---
 jQuery("#layerslider").layerSlider({
   pauseOnHover: true,
   autoPlayVideos: false,
@@ -38,7 +40,7 @@ $(document).ready(function() {
         $subject = $('#subject'),
         $message = $('#message'),
         isValid = true;
-        
+
     if($name.val().trim() === '') {
       isValid = false;
       $name.parent('.form-group').addClass('has-error');
@@ -48,7 +50,7 @@ $(document).ready(function() {
       isValid = false;
       $email.parent('.form-group').addClass('has-error');
       $email.parent('.form-group').children('.help-block').removeClass('hidden');
-      
+
       $phone.parent('.form-group').addClass('has-error');
       $phone.parent('.form-group').children('.help-block').removeClass('hidden');
     }
@@ -62,7 +64,7 @@ $(document).ready(function() {
       $message.parent('.form-group').addClass('has-error');
       $message.parent('.form-group').children('.help-block').removeClass('hidden');
     }
-    
+
     if(isValid) {
       var data = {
         text: '<mailto:' + $email.val() + '|' + $name.val() + '> (' + $phone.val() + ')\n\n_USER AGENT:' + navigator.userAgent + '_\n_REFERRER:' + document.referrer + '_\n\n*'
