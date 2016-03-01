@@ -1,9 +1,7 @@
----
----
 jQuery("#layerslider").layerSlider({
   pauseOnHover: true,
   autoPlayVideos: false,
-  skinsPath: '{{base}}/assets/layerslider/skins/',
+  skinsPath: '/assets/layerslider/skins/',
   responsive: false,
   responsiveUnder: 1280,
   layersContainer: 1280,
