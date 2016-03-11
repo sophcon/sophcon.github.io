@@ -20,11 +20,11 @@ author: [Robert Sweeney, Yer Yang]
 
 ## vNEXT is vNOW ##
 
-With recent announcements being made that .NET Core 1.0, ASP.NET Core 1.0, ASP.NET MVC Core 1.0 was RTM'd we felt this was a good time to considering porting some of applications to the new stack. In the process we ran across some pretty interesting challenges:
+With recent announcements being made that .NET Core 1.0, ASP.NET Core 1.0, ASP.NET MVC Core 1.0 was RTM'd we felt this was a good time to considering porting some of our applications to the new stack. In the process we ran across some pretty interesting challenges:
 
 ## Acquisition ##
 
-This was likely one of the more easier aspects to the entire process. On Windows this can be as simple as installing Visual Studio, however, we wanted a deeper understanding of the cross platform story so, we opted for the full blown CLI experience. Installing the .NET Version Manager (DNVM) as prescribed via the [docs.asp.net](http://docs.asp.net) site and downloading the most recent versions of the .NET Execution environment.
+This was likely one of the easier aspects to the entire process. On Windows, this can be as simple as installing Visual Studio, however, we wanted a deeper understanding of the cross platform story so, we opted for the full blown CLI experience. Installing the .NET Version Manager (DNVM) as prescribed via the [docs.asp.net](http://docs.asp.net) site and downloading the most recent versions of the .NET Execution environment.
 
 ## Project Structure ##
 
