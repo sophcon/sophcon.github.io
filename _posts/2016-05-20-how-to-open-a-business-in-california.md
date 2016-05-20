@@ -12,13 +12,13 @@ Having to go through the process a couple of times, I often find myself assistin
 
 What you'll need to consider:
 
-* Type of business
-  * Sole-Proprietor
-  * General Partnership
-* Will you have employees day one?
-* Will you be selling a physical product or will you be providing a service?
-* Will you have offices and/or a store front?
-* Will you be working out of your home?
+ * Type of business
+   * Sole-Proprietor
+   * General Partnership
+ * Will you have employees day one?
+ * Will you be selling a physical product or will you be providing a service?
+ * Will you have offices and/or a store front?
+ * Will you be working out of your home?
 
 Fictitious Business Name
 ========================
@@ -43,15 +43,15 @@ Partnership Agreement
 This is only necessary when you have decided to go into business with a partner. This agreement is pretty important for number of reasons. From a partnership perspective this outlines many of the responsibilities, obligations, and expectations that the partnership has. Banks will also require the partnership agreement when you opening a joint accounts.
 Some important ideas to consider when drafting your partnership are the following:
 
-* Percentage of Ownership for all parties
-* Vesting Terms
-  * This is a set of requirements in which each partner qualifies his/her ownership in the partnership. This is a good way to protect all sides from having an absentee partner that no longer chooses to play an active role in the partnership, but, is legally entitled to his/her shares.
-* Profits, Losses, and Salaries
-  * Agreement on how of the finances will handled.
-* Withdrawal
-  * Agreement on how one is to withdrawal from the partnership and how it is handled. This section can also contain involuntary withdrawal (death of a partner).
-* Disputes
-  * Agreement on how disputes are to be handled. Typically the majority share-holder tends to be the decider. There are a large number of articles on the internet explaining why 50/50 partnerships are rarely a good idea. Easiest solution, decide on who will be the majority shareholder and make it a 51/49 partnership.
+ * Percentage of Ownership for all parties
+ * Vesting Terms
+   * This is a set of requirements in which each partner qualifies his/her ownership in the partnership. This is a good way to protect all sides from having an absentee partner that no longer chooses to play an active role in the partnership, but, is legally entitled to his/her shares.
+ * Profits, Losses, and Salaries
+   * Agreement on how of the finances will handled.
+ * Withdrawal
+   * Agreement on how one is to withdrawal from the partnership and how it is handled. This section can also contain involuntary withdrawal (death of a partner).
+ * Disputes
+   * Agreement on how disputes are to be handled. Typically the majority share-holder tends to be the decider. There are a large number of articles on the internet explaining why 50/50 partnerships are rarely a good idea. Easiest solution, decide on who will be the majority shareholder and make it a 51/49 partnership.
 
 While these are good topics to cover in your Partnership Agreement writing one can still be difficult. Consider starting with a template it will speed up the process of writing a partnership agreement everyone can be happy with.
 
@@ -77,10 +77,10 @@ Hopefully your company's business flourishes and you'll need to find a place to 
 
 Below is a quick checklist of what you'll need to bring with you.
 
-* Partnerships
-  * All partners must be present.
-  * Partnership agreement
-* Employer Identification Number (EIN)
-  * Again, for Sole Proprietors, you can use your Social Security Number (SSN)
-* Two forms of Identification
-* Fictitious Business Name Certificate (or at least the submission forms, with county stamp)
+ * Partnerships
+   * All partners must be present.
+   * Partnership agreement
+ * Employer Identification Number (EIN)
+   * Again, for Sole Proprietors, you can use your Social Security Number (SSN)
+ * Two forms of Identification
+ * Fictitious Business Name Certificate (or at least the submission forms, with county stamp)
