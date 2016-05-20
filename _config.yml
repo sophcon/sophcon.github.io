@@ -1,5 +1,6 @@
 domain: sophcon.github.io
 title: Sophcon
+baseurl: "" # the subpath of your site, e.g. /blog/
 
 paginate: 10 # pagination based on number of posts
 paginate_path: "/blog/page:num"

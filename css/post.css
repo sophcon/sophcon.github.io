@@ -1,0 +1,19 @@
+ol, ul {
+  list-style: circle !important;
+  list-style-position: outside !important;
+  padding-left:1.5em;
+  margin-left:0
+}
+
+h1 {
+    margin-top: 20.3px;
+}
+
+li {
+  margin: initial !important;
+  padding: initial !important;
+}
+
+.header-img {
+  padding: 54px 0 !important;
+}

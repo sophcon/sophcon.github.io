@@ -11,13 +11,20 @@
 
   <!-- Boomerang styles -->
   <link id="wpStylesheet" type="text/css" href="/css/global-style-blue.css" rel="stylesheet" media="screen">
-  <link id="sophocnsheet" type="text/css" href="/css/sophcon-style-blue.css" rel="stylesheet" media="screen">
+  <link id="sophconsheet" type="text/css" href="/css/sophcon-style-blue.css" rel="stylesheet" media="screen">
   <!-- Favicon -->
 
   <!-- Assets -->
   <link rel="stylesheet" href="/assets/owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="/assets/owl-carousel/owl.theme.css">
   <link rel="stylesheet" href="/assets/sky-forms/css/sky-forms.css">
+
+  <!-- layouts specific -->
+  {% if page.layout == 'post' %}
+  <link id="postsheet" href="/css/post.css" rel="stylesheet" media="screen">
+  {% elsif page.title == 'News' %}
+  <link href="/assets/timeline/timeline.css" rel="stylesheet">
+  {% endif%}
   <!--[if lt IE 9]>
       <link rel="stylesheet" href="assets/sky-forms/css/sky-forms-ie8.css">
   <![endif]-->
@@ -29,6 +36,5 @@
   <!-- Page scripts -->
   <link rel="stylesheet" href="/assets/layerslider/css/layerslider.css" type="text/css">
   <!-- Video JS -->
-  <link href="/assets/timeline/timeline.css" rel="stylesheet">
 
 </head>

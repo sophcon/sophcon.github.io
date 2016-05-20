@@ -35,7 +35,7 @@ layout: default
                 <div class="post-meta-bot clearfix">
                   <span class="post-author">WRITTEN BY
                     {% for author in post.author %}
-                    <a href='../about/{{ author | slugify }}'>{{ author }}</a>
+                    {{ author }}
                     {% if forloop.last == false %},{% endif %}
                     {% endfor %}
                   </span>
