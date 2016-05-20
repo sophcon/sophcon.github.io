@@ -2,9 +2,10 @@ domain: sophcon.github.io
 title: Sophcon
 
 paginate: 10 # pagination based on number of posts
-paginate_path: "/company/blogs/page:num"
+paginate_path: "/blog/page:num"
 markdown: kramdown
 future: true
+permalink: pretty
 
 collections:
   services:

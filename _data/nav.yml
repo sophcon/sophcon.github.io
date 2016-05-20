@@ -30,12 +30,12 @@
   subNav:
     - subTitle: "About Us"
       subUrl: "/company/about/"
-    - subTitle: "Blogs"
-      subUrl: "/company/blogs/"
+    - subTitle: "News"
+      subUrl: "/news/"
 #    - subTitle: "News"
 #      subUrl: "/company/news/"
     - subTitle: "Contact Us"
       subUrl: "/company/contact/"
 
-- title: "News"
-  url: "/news/"
+- title: "Blog"
+  url: "/blog/"

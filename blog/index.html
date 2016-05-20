@@ -57,7 +57,7 @@ layout: default
     {% if paginator.previous_page %}
     <li class="previous">
       {% if paginator.previous_page == 1 %}
-      <a href="{{ base }}/company/blogs/">&larr; Newer</a>
+      <a href="{{ base }}/blog/">&larr; Newer</a>
       {% else %}
       <a href="{{ base }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
       {% endif %}
