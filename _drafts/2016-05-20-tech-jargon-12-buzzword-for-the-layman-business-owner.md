@@ -16,15 +16,17 @@ I've compiled a list of *12 Buzzwords/Phrase/Acronyms* that will help the Layman
 
 1.  **Agile Software Development**
 
-    Describes a set of principles for software development where the development and functional teams work closely together. Requirements and solutions are not static but evolve through shorter iteration where a functional software is available. This type of software development style promotes **"adaptive planning", "evolutionary development", "early delivery", "continuous improvement"**, and **"encourages rapid and flexible response to change"**. [for more info](https://en.wikipedia.org/wiki/Agile_software_development)
-
-2.  **Scrum Software Development**
-
-    Is the framework to manage product development using agile software development (see above) principles. The framework defines 'a flexible, holistic product development strategy where a development team works as a unit to reach a common goal' and encourages physical co-locations or a close online collaboration of all team members. The framework also encourages short daily face-to-face communication sessions with all the team members of the project. [for more info](https://en.wikipedia.org/wiki/Scrum_(software_development))
+    *Agile Software Development* is a set of principal use to manage and organize how software development teams develop software. It is a way to develop 
+    software that allows for adjustments to the project on an ongoing, regular basis. Unlike "waterfall" where at the beginning the project the requirements 
+    are defined and meeting those requirements define the success or failure. [*wikipedia.org*](https://en.wikipedia.org/wiki/Agile_software_development)
 
 3.  **Responsive Web Design or Mobile First Design**
 
-    Describes a web design approach where the web site is created to provide the optimal viewing and interaction experience regardless of the device it is being presented on (from desktop computer monitors to tablets to mobile phone). [for more info](https://en.wikipedia.org/wiki/Responsive_web_design)
+    *Responsive Web Design / Mobile First Design* describes a web design approach where the web site is created to give the ideal viewing and interaction 
+    experience regardless of the device it is being presented on from desktop computer monitors, tablets and mobile phone.
+    
+    To understand the need for this type of design, we have to understand the key differences between mobile and desktop. The mobile experience uses your finger
+    tip in place of the mouse you would use on a desktop. But on a mobile device, there [wikipedia.org](https://en.wikipedia.org/wiki/Responsive_web_design)
 
 4.  **Cloud Services**
 
