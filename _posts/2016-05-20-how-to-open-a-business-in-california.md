@@ -52,13 +52,13 @@ Some important ideas to consider when drafting your partnership are the followin
  * Withdrawal
    * Agreement on how one is to withdrawal from the partnership and how it is handled. This section can also contain involuntary withdrawal (death of a partner).
  * Disputes
-   * Agreement on how disputes are handled. Typically the majority share-holder is the decider. There are a large number of articles on the internet explaining why 50/50 partnerships are rarely a good idea. Easiest solution, decide on who will be the majority shareholder and make it a 51/49 partnership.
+   * Agreement on how disputes are handled. Typically the majority share-holder is the decider. There are [a large number of articles on the internet](https://www.google.com/#q=50%2F50%20partnership%20disputes) explaining why [50/50 partnerships are rarely a good idea](http://thebusinessprofessor.com/5050-partnerships-never-a-good-idea/). Easiest solution, decide on who will be the majority shareholder and make it a 51/49 partnership.
 
 While these are good topics to cover in your Partnership Agreement writing one can still be difficult. Consider starting with a template it will speed up the process of writing a partnership agreement everyone can be happy with.
 
 Business License
 ================
-Most cities and/or counties need your new company to file for a Business License/Business Permit. Where you file for your Business License will depend primarily on the place where you are doing your primary business from. Locations in unincorporated areas will need to file with their County for a Business License. Otherwise, check your city for how to apply. CalGold has a good site to help you find these offices. When filing for your Business Licenses there will be an application fee. This varies based on City/County. Last time I filed for a business licenses it cost me $166.
+Most cities and/or counties need your new company to file for a Business License/Business Permit. Where you file for your Business License will depend primarily on the place where you are doing your primary business from. Locations in unincorporated areas will need to file with their County for a Business License. Otherwise, check your city for how to apply. [CalGold](http://www.calgold.ca.gov/) has a good site to help you find these offices. When filing for your Business Licenses there will be an application fee. This varies based on City/County. Last time I filed for a business licenses it cost me $166.
 
 Once submitted the city will normally have a series of approvals that the application will undergo. This approval process will vary depending on the type of business you will be conducting. As a result you may need to undergo a fire inspection of your building, or some types of inspections.
 
@@ -70,7 +70,7 @@ In some cases, you will need to specify rooms within the residents that are used
 
 Sellers Permit
 ==============
-When selling tangible/physical goods, a business must collect sales tax on those goods, on behalf of the state. For this purpose you will need to get a Sellers Permit via the California State Board of Equalization website. Many vendors/wholesalers will need this information before they will even do business with your company.
+When selling tangible/physical goods, a business must collect sales tax on those goods, on behalf of the state. For this purpose you will need to get a Sellers Permit via the [California State Board of Equalization website](https://efile.boe.ca.gov/ereg/index.boe). Many vendors/wholesalers will need this information before they will even do business with your company.
 
 Bank Account
 ============
